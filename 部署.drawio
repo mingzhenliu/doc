@@ -1,106 +1,166 @@
-<mxfile host="app.diagrams.net" modified="2025-06-09T16:16:00.000Z" agent="Grok 3" etag="def456" version="20.7.5">
-  <diagram id="1" name="Stablecoin Deployment Diagram with Multi-AZ/Region DR">
-    <mxGraphModel dx="1280" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1400">
+<mxfile host="app.diagrams.net">
+  <diagram id="stablecoin-dr-arch" name="容灾部署图">
+    <mxGraphModel dx="1600" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
 
-        <!-- Region 1 -->
-        <mxCell id="2" value="Region 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f3ff;strokeColor=#4d94ff;" vertex="1" parent="1">
-          <mxGeometry x="50" y="50" width="500" height="600" as="geometry"/>
+        <!-- ============= Region 1（主 Region） ============= -->
+        <mxCell id="region1" value="Region 1（主 Region，Active）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#333;fillColor=#f9f9f9;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="50" y="30" width="500" height="800" as="geometry"/>
         </mxCell>
 
-        <!-- AZ1 in Region 1 -->
-        <mxCell id="3" value="AZ1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="2">
-          <mxGeometry x="50" y="50" width="200" height="500" as="geometry"/>
+        <!-- Region 1 - AZ1-A（可用区 A） -->
+        <mxCell id="az1a" value="AZ1-A（Region1）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666;fillColor=#f0f0f0;fontSize=12;" parent="region1" vertex="1">
+          <mxGeometry x="30" y="30" width="220" height="350" as="geometry"/>
         </mxCell>
-        <mxCell id="4" value="Public Subnet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="3">
-          <mxGeometry x="50" y="50" width="100" height="50" as="geometry"/>
-        </mxCell>
-        <mxCell id="5" value="SCOP-GATEWAY" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="4">
-          <mxGeometry x="0" y="60" width="100" height="50" as="geometry"/>
-        </mxCell>
-        <mxCell id="6" value="Core Private Subnet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="3">
-          <mxGeometry x="50" y="120" width="100" height="300" as="geometry"/>
-        </mxCell>
-        <mxCell id="7" value="SCOP-MGR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="6">
-          <mxGeometry x="0" y="0" width="100" height="50" as="geometry"/>
-        </mxCell>
-        <mxCell id="8" value="SCOP-CORE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="6">
-          <mxGeometry x="0" y="60" width="100" height="50" as="geometry"/>
+        <!-- Region 1 - AZ1-B（可用区 B） -->
+        <mxCell id="az1b" value="AZ1-B（Region1）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666;fillColor=#f0f0f0;fontSize=12;" parent="region1" vertex="1">
+          <mxGeometry x="260" y="30" width="220" height="350" as="geometry"/>
         </mxCell>
 
-        <!-- AZ2 in Region 1 -->
-        <mxCell id="9" value="AZ2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="2">
-          <mxGeometry x="250" y="50" width="200" height="500" as="geometry"/>
+        <!-- Region 1 - 网络层 -->
+        <mxCell id="ztna1" value="Zero Trust Access/VPN（Region1）" style="rounded=0;whiteSpace=wrap;html=1;" parent="region1" vertex="1">
+          <mxGeometry x="50" y="420" width="160" height="30" as="geometry"/>
         </mxCell>
-        <mxCell id="10" value="Isolated Subnet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="9">
-          <mxGeometry x="50" y="50" width="100" height="200" as="geometry"/>
-        </mxCell>
-        <mxCell id="11" value="Databases" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="10">
-          <mxGeometry x="0" y="0" width="100" height="50" as="geometry"/>
-        </mxCell>
-        <mxCell id="12" value="Amazon MQ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="10">
-          <mxGeometry x="0" y="60" width="100" height="50" as="geometry"/>
+        <mxCell id="nat1" value="NAT Gateway(EIP)（Region1）" style="rounded=0;whiteSpace=wrap;html=1;" parent="region1" vertex="1">
+          <mxGeometry x="50" y="460" width="160" height="30" as="geometry"/>
         </mxCell>
 
-        <!-- Region 2 -->
-        <mxCell id="13" value="Region 2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f3ff;strokeColor=#4d94ff;" vertex="1" parent="1">
-          <mxGeometry x="600" y="50" width="500" height="600" as="geometry"/>
+        <!-- Region 1 - 接入层 -->
+        <mxCell id="apiGw1" value="API Gateway（Region1）" style="rounded=0;whiteSpace=wrap;html=1;" parent="region1" vertex="1">
+          <mxGeometry x="50" y="500" width="160" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="scopGw1" value="SCOP-GATEWAY（Region1）" style="rounded=0;whiteSpace=wrap;html=1;" parent="region1" vertex="1">
+          <mxGeometry x="50" y="540" width="160" height="30" as="geometry"/>
         </mxCell>
 
-        <!-- AZ1 in Region 2 -->
-        <mxCell id="14" value="AZ1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="13">
-          <mxGeometry x="50" y="50" width="200" height="500" as="geometry"/>
+        <!-- Region 1 - 核心子系统（AZ1-A） -->
+        <mxCell id="scopMgr1a" value="SCOP-MGR" style="rounded=0;whiteSpace=wrap;html=1;" parent="az1a" vertex="1">
+          <mxGeometry x="20" y="30" width="80" height="30" as="geometry"/>
         </mxCell>
-        <mxCell id="15" value="Minter Private Subnet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="14">
-          <mxGeometry x="50" y="50" width="100" height="200" as="geometry"/>
+        <mxCell id="scopData1a" value="SCOP-DATA" style="rounded=0;whiteSpace=wrap;html=1;" parent="az1a" vertex="1">
+          <mxGeometry x="20" y="70" width="80" height="30" as="geometry"/>
         </mxCell>
-        <mxCell id="16" value="Data Analysis Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="15">
-          <mxGeometry x="0" y="0" width="100" height="50" as="geometry"/>
+        <mxCell id="scopCore1a" value="SCOP-CORE" style="rounded=0;whiteSpace=wrap;html=1;" parent="az1a" vertex="1">
+          <mxGeometry x="20" y="110" width="80" height="30" as="geometry"/>
         </mxCell>
-        <mxCell id="17" value="Minter Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="15">
-          <mxGeometry x="0" y="60" width="100" height="50" as="geometry"/>
+        <mxCell id="scopReserve1a" value="SCOP-RESERVE" style="rounded=0;whiteSpace=wrap;html=1;" parent="az1a" vertex="1">
+          <mxGeometry x="20" y="150" width="80" height="30" as="geometry"/>
         </mxCell>
-
-        <!-- AZ2 in Region 2 -->
-        <mxCell id="18" value="AZ2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="13">
-          <mxGeometry x="250" y="50" width="200" height="500" as="geometry"/>
+        <mxCell id="scopRisk1a" value="SCOP-RISK" style="rounded=0;whiteSpace=wrap;html=1;" parent="az1a" vertex="1">
+          <mxGeometry x="20" y="190" width="80" height="30" as="geometry"/>
         </mxCell>
-        <mxCell id="19" value="Isolated Subnet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="18">
-          <mxGeometry x="50" y="50" width="100" height="200" as="geometry"/>
-        </mxCell>
-        <mxCell id="20" value="Graph Database" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="19">
-          <mxGeometry x="0" y="0" width="100" height="50" as="geometry"/>
+        <mxCell id="scopTxProxy1a" value="SCOP-TXPROXY" style="rounded=0;whiteSpace=wrap;html=1;" parent="az1a" vertex="1">
+          <mxGeometry x="20" y="230" width="80" height="30" as="geometry"/>
         </mxCell>
 
-        <!-- Connections for DR -->
-        <mxCell id="21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="11" target="20">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="100" y="170" as="sourcePoint"/>
-            <mxPoint x="650" y="100" as="targetPoint"/>
-          </mxGeometry>
+        <!-- Region 1 - 核心子系统（AZ1-B，冗余） -->
+        <mxCell id="scopMgr1b" value="SCOP-MGR" style="rounded=0;whiteSpace=wrap;html=1;" parent="az1b" vertex="1">
+          <mxGeometry x="20" y="30" width="80" height="30" as="geometry"/>
         </mxCell>
-        <mxCell id="22" value="Data Replication" style="edgeLabel;resizable=0;align=center;verticalAlign=middle;points=[];" vertex="1" connectable="0" parent="21">
-          <mxGeometry x="0.5" y="10" relative="1" as="geometry"/>
+        <mxCell id="scopData1b" value="SCOP-DATA" style="rounded=0;whiteSpace=wrap;html=1;" parent="az1b" vertex="1">
+          <mxGeometry x="20" y="70" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="scopCore1b" value="SCOP-CORE" style="rounded=0;whiteSpace=wrap;html=1;" parent="az1b" vertex="1">
+          <mxGeometry x="20" y="110" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="scopReserve1b" value="SCOP-RESERVE" style="rounded=0;whiteSpace=wrap;html=1;" parent="az1b" vertex="1">
+          <mxGeometry x="20" y="150" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="scopRisk1b" value="SCOP-RISK" style="rounded=0;whiteSpace=wrap;html=1;" parent="az1b" vertex="1">
+          <mxGeometry x="20" y="190" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="scopTxProxy1b" value="SCOP-TXPROXY" style="rounded=0;whiteSpace=wrap;html=1;" parent="az1b" vertex="1">
+          <mxGeometry x="20" y="230" width="80" height="30" as="geometry"/>
         </mxCell>
 
-        <!-- Operator Device and Third-Party Systems -->
-        <mxCell id="23" value="Operator Device (Internal/Remote)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="50" y="700" width="200" height="100" as="geometry"/>
+        <!-- Region 1 - Minter 子网 -->
+        <mxCell id="minterSubnet1" value="Minter Private Subnet（Region1）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666;fillColor=#f0f0f0;fontSize=12;" parent="region1" vertex="1">
+          <mxGeometry x="50" y="600" width="220" height="150" as="geometry"/>
         </mxCell>
-        <mxCell id="24" value="Third-Party Systems" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="600" y="700" width="200" height="100" as="geometry"/>
+        <mxCell id="minterSvc1" value="Minter Service（Region1）" style="rounded=0;whiteSpace=wrap;html=1;" parent="minterSubnet1" vertex="1">
+          <mxGeometry x="20" y="30" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="dataAnalytics1" value="Data Analysis Service（Region1）" style="rounded=0;whiteSpace=wrap;html=1;" parent="minterSubnet1" vertex="1">
+          <mxGeometry x="20" y="70" width="100" height="30" as="geometry"/>
         </mxCell>
 
-        <!-- Additional Connections -->
-        <mxCell id="25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5" target="8">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="100" y="110" as="sourcePoint"/>
-            <mxPoint x="100" y="180" as="targetPoint"/>
-          </mxGeometry>
+        <!-- Region 1 - 数据层 -->
+        <mxCell id="db1" value="Databases（主，Region1）" style="rounded=0;whiteSpace=wrap;html=1;" parent="region1" vertex="1">
+          <mxGeometry x="50" y="760" width="160" height="30" as="geometry"/>
         </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+        <mxCell id="mq1" value="Amazon MQ（主，Region1）" style="rounded=0;whiteSpace=wrap;html=1;" parent="region1" vertex="1">
+          <mxGeometry x="50" y="800" width="160" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="graphDb1" value="Graph Database（主，Region1）" style="rounded=0;whiteSpace=wrap;html=1;" parent="region1" vertex="1">
+          <mxGeometry x="240" y="760" width="160" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- ============= Region 2（备 Region） ============= -->
+        <mxCell id="region2" value="Region 2（备 Region，Standby）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#333;fillColor=#f9f9f9;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="650" y="30" width="500" height="800" as="geometry"/>
+        </mxCell>
+
+        <!-- Region 2 - AZ2-A（可用区 A） -->
+        <mxCell id="az2a" value="AZ2-A（Region2）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666;fillColor=#f0f0f0;fontSize=12;" parent="region2" vertex="1">
+          <mxGeometry x="30" y="30" width="220" height="350" as="geometry"/>
+        </mxCell>
+        <!-- Region 2 - AZ2-B（可用区 B） -->
+        <mxCell id="az2b" value="AZ2-B（Region2）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666;fillColor=#f0f0f0;fontSize=12;" parent="region2" vertex="1">
+          <mxGeometry x="260" y="30" width="220" height="350" as="geometry"/>
+        </mxCell>
+
+        <!-- Region 2 - 网络层 -->
+        <mxCell id="ztna2" value="Zero Trust Access/VPN（Region2）" style="rounded=0;whiteSpace=wrap;html=1;" parent="region2" vertex="1">
+          <mxGeometry x="50" y="420" width="160" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="nat2" value="NAT Gateway(EIP)（Region2）" style="rounded=0;whiteSpace=wrap;html=1;" parent="region2" vertex="1">
+          <mxGeometry x="50" y="460" width="160" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Region 2 - 接入层 -->
+        <mxCell id="apiGw2" value="API Gateway（Region2）" style="rounded=0;whiteSpace=wrap;html=1;" parent="region2" vertex="1">
+          <mxGeometry x="50" y="500" width="160" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="scopGw2" value="SCOP-GATEWAY（Region2）" style="rounded=0;whiteSpace=wrap;html=1;" parent="region2" vertex="1">
+          <mxGeometry x="50" y="540" width="160" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Region 2 - 核心子系统（AZ2-A） -->
+        <mxCell id="scopMgr2a" value="SCOP-MGR" style="rounded=0;whiteSpace=wrap;html=1;" parent="az2a" vertex="1">
+          <mxGeometry x="20" y="30" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="scopData2a" value="SCOP-DATA" style="rounded=0;whiteSpace=wrap;html=1;" parent="az2a" vertex="1">
+          <mxGeometry x="20" y="70" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="scopCore2a" value="SCOP-CORE" style="rounded=0;whiteSpace=wrap;html=1;" parent="az2a" vertex="1">
+          <mxGeometry x="20" y="110" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="scopReserve2a" value="SCOP-RESERVE" style="rounded=0;whiteSpace=wrap;html=1;" parent="az2a" vertex="1">
+          <mxGeometry x="20" y="150" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="scopRisk2a" value="SCOP-RISK" style="rounded=0;whiteSpace=wrap;html=1;" parent="az2a" vertex="1">
+          <mxGeometry x="20" y="190" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="scopTxProxy2a" value="SCOP-TXPROXY" style="rounded=0;whiteSpace=wrap;html=1;" parent="az2a" vertex="1">
+          <mxGeometry x="20" y="230" width="80" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Region 2 - 核心子系统（AZ2-B，冗余） -->
+        <mxCell id="scopMgr2b" value="SCOP-MGR" style="rounded=0;whiteSpace=wrap;html=1;" parent="az2b" vertex="1">
+          <mxGeometry x="20" y="30" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="scopData2b" value="SCOP-DATA" style="rounded=0;whiteSpace=wrap;html=1;" parent="az2b" vertex="1">
+          <mxGeometry x="20" y="70" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="scopCore2b" value="SCOP-CORE" style="rounded=0;whiteSpace=wrap;html=1;" parent="az2b" vertex="1">
+          <mxGeometry x="20" y="110" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="scopReserve2b" value="SCOP-RESERVE" style="rounded=0;whiteSpace=wrap;html=1;" parent="az2b" vertex="1">
+          <mxGeometry x="20" y="150" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="scopRisk2b" value="SCOP-RISK" style="rounded=0;whiteSpace=wrap;html=1;" parent="az2b" vertex="1">
+          <mxGeometry x="20" y="190" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="scopTxProxy2b" value="SCOP-TXPROXY" style="rounded=0
