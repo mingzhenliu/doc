@@ -1,14 +1,14 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0" version="27.1.4">
   <diagram name="SCOP-Deployment" id="deployment-diagram">
-    <mxGraphModel dx="1398" dy="1768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+    <mxGraphModel dx="1398" dy="1768" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="primary-region" value="Primary Region (us-east-1)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=3;fontSize=14;fontStyle=1;" parent="1" vertex="1">
-          <mxGeometry x="50" y="50" width="600" height="650" as="geometry" />
+        <mxCell id="primary-region" value="Primary Region (us-east-1)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=3;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="50" width="600" height="570" as="geometry" />
         </mxCell>
-        <mxCell id="secondary-region" value="Secondary Region (us-west-2)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=3;fontSize=14;fontStyle=1;" parent="1" vertex="1">
-          <mxGeometry x="700" y="50" width="600" height="650" as="geometry" />
+        <mxCell id="secondary-region" value="Secondary Region (us-west-2)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=3;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="700" y="50" width="600" height="570" as="geometry" />
         </mxCell>
         <mxCell id="primary-az1" value="Availability Zone 1a&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="70" y="90" width="270" height="230" as="geometry" />
@@ -175,22 +175,22 @@
         <mxCell id="global-lb" value="Global Load Balancer / Route 53" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffcccc;strokeColor=#ff0000;strokeWidth=2;fontSize=12;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="590" y="-10" width="200" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="lb-to-primary" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#009900;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" edge="1" source="global-lb">
+        <mxCell id="lb-to-primary" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#009900;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="global-lb" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="650" y="60" as="sourcePoint" />
             <mxPoint x="350" y="110" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lb-to-secondary" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#ff9900;strokeWidth=2;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" edge="1" source="global-lb">
+        <mxCell id="lb-to-secondary" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#ff9900;strokeWidth=2;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="global-lb" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="750" y="60" as="sourcePoint" />
             <mxPoint x="1000" y="110" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="primary-traffic-label" value="Primary Traffic" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#009900;" parent="1" vertex="1">
+        <mxCell id="primary-traffic-label" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Primary Traffic&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#009900;" parent="1" vertex="1">
           <mxGeometry x="450" y="75" width="80" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="failover-traffic-label" value="Failover Traffic" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#ff9900;" parent="1" vertex="1">
+        <mxCell id="failover-traffic-label" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Failover Traffic&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#ff9900;" parent="1" vertex="1">
           <mxGeometry x="850" y="75" width="80" height="20" as="geometry" />
         </mxCell>
         <mxCell id="az-sync-p" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;strokeColor=#0066cc;strokeWidth=2;" parent="1" edge="1">
@@ -199,20 +199,23 @@
             <mxPoint x="380" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="legend" value="Legend" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;fontStyle=1;" parent="1" vertex="1">
-          <mxGeometry x="50" y="607" width="200" height="80" as="geometry" />
+        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-5" value="Bank" style="shape=mxgraph.signs.travel.bank;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="747" y="-129.5" width="59.25" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="legend-primary" value="Primary Traffic" style="text;html=1;strokeColor=#009900;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" parent="1" vertex="1">
-          <mxGeometry x="60" y="622" width="80" height="15" as="geometry" />
+        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-6" value="&lt;span&gt;BlockChain&lt;/span&gt;" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/cryptocurrency-blockchain-fintech-free/32/Cryptocurrency_blockchain_data-37-128.png;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="-124" width="34" height="34" as="geometry" />
         </mxCell>
-        <mxCell id="legend-failover" value="Failover Traffic" style="text;html=1;strokeColor=#ff9900;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" parent="1" vertex="1">
-          <mxGeometry x="60" y="637" width="80" height="15" as="geometry" />
+        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-7" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Governance,&lt;br&gt;Risk&amp;nbsp;&amp;amp;&lt;br&gt;Compliance&lt;/font&gt;" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;fontColor=#4277BB;labelBackgroundColor=none;fontSize=12;spacingTop=3;image=img/lib/ibm/security/governance_risk_compliance.svg;imageBackground=none;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="905" y="-127" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="legend-replication" value="Data Replication" style="text;html=1;strokeColor=#ff6666;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" parent="1" vertex="1">
-          <mxGeometry x="60" y="652" width="80" height="15" as="geometry" />
+        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-8" value="minter" style="sketch=0;verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;fillColor=#000000;align=center;outlineConnect=0;pointerEvents=1;shape=mxgraph.citrix2.citrix_enterprise_browser;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="1053.1" y="-125" width="41.9" height="36" as="geometry" />
         </mxCell>
-        <mxCell id="legend-az-sync" value="AZ Sync" style="text;html=1;strokeColor=#0066cc;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" parent="1" vertex="1">
-          <mxGeometry x="60" y="667" width="80" height="15" as="geometry" />
+        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-9" value="MPC Wallet" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/ionicons-sharp-vol-2/512/wallet-sharp-128.png;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="458" y="-127" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-10" value="Operator Device (Internal/Remote)" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#505050;shape=mxgraph.mscae.intune.device_os;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="-132" width="49" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
