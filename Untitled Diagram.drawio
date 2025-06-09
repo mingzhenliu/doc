@@ -295,7 +295,7 @@
         <mxCell id="fwhBZkmsll9hYJDBTmuX-115" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;SCOP-GATEWAY&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="252" y="249" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="fwhBZkmsll9hYJDBTmuX-117" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Zero&amp;nbsp;Trust&amp;nbsp;Access&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="fwhBZkmsll9hYJDBTmuX-117" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Zero&amp;nbsp;Trust&amp;nbsp;Access/VPN&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="252" y="195" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="fwhBZkmsll9hYJDBTmuX-118" value="Operator Device (Internal/Remote)" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#505050;shape=mxgraph.mscae.intune.device_os" vertex="1" parent="1">
