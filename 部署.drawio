@@ -83,16 +83,16 @@
           <mxGeometry x="480" y="270" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="p-rds-primary" value="RDS Primary" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="120" y="357" width="80" height="60" as="geometry" />
+          <mxGeometry x="120" y="376" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="p-rds-read" value="RDS Read Replica" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="220" y="357" width="80" height="60" as="geometry" />
+          <mxGeometry x="220" y="376" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="p-graph-db" value="Graph DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="320" y="357" width="80" height="60" as="geometry" />
+          <mxGeometry x="320" y="376" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="p-mq" value="Amazon MQ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="450" y="372" width="100" height="30" as="geometry" />
+          <mxGeometry x="450" y="391" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="p-minter-1" value="Minter Service 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="120" y="522" width="100" height="30" as="geometry" />
@@ -152,16 +152,16 @@
           <mxGeometry x="1130" y="270" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="s-rds-standby" value="RDS Standby" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="770" y="357" width="80" height="60" as="geometry" />
+          <mxGeometry x="770" y="379" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="s-rds-read" value="RDS Read Replica" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="870" y="357" width="80" height="60" as="geometry" />
+          <mxGeometry x="870" y="379" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="s-graph-db" value="Graph DB Replica" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="970" y="357" width="80" height="60" as="geometry" />
+          <mxGeometry x="970" y="379" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="s-mq" value="Amazon MQ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="1100" y="372" width="100" height="30" as="geometry" />
+          <mxGeometry x="1100" y="394" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="s-minter-1" value="Minter Service 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="770" y="522" width="100" height="30" as="geometry" />
