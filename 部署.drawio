@@ -86,22 +86,22 @@
           <mxGeometry x="794" y="312" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-129" value="SCOP-RESERVE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="794" y="481" width="130" height="30" as="geometry" />
+          <mxGeometry x="794" y="474" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-130" value="SCOP-MGR" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="794" y="351" width="130" height="30" as="geometry" />
+          <mxGeometry x="794" y="352" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-131" value="SCOP-CORE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="794" y="396" width="130" height="30" as="geometry" />
+          <mxGeometry x="794" y="393" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-132" value="SCOP-DATA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="794" y="441" width="130" height="30" as="geometry" />
+          <mxGeometry x="794" y="433" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-133" value="SCOP-COMPLIANCE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="794" y="521" width="130" height="30" as="geometry" />
+          <mxGeometry x="794" y="514" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-134" value="&lt;font&gt;SCOP-TXPROXY&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="794" y="557" width="130" height="30" as="geometry" />
+          <mxGeometry x="794" y="555" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-135" value="SCOP-REGULATORY" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="794" y="595" width="130" height="30" as="geometry" />
@@ -140,22 +140,22 @@
           <mxGeometry x="72.5" y="307" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-192" value="SCOP-RESERVE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="72.5" y="476" width="130" height="30" as="geometry" />
+          <mxGeometry x="72.5" y="469" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-193" value="SCOP-MGR" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="72.5" y="346" width="130" height="30" as="geometry" />
+          <mxGeometry x="72.5" y="347" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-194" value="SCOP-CORE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="72.5" y="391" width="130" height="30" as="geometry" />
+          <mxGeometry x="72.5" y="388" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-195" value="SCOP-DATA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="72.5" y="436" width="130" height="30" as="geometry" />
+          <mxGeometry x="72.5" y="428" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-196" value="SCOP-COMPLIANCE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="72.5" y="516" width="130" height="30" as="geometry" />
+          <mxGeometry x="72.5" y="509" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-197" value="&lt;font&gt;SCOP-TXPROXY&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="72.5" y="552" width="130" height="30" as="geometry" />
+          <mxGeometry x="72.5" y="550" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-198" value="SCOP-REGULATORY" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="72.5" y="590" width="130" height="30" as="geometry" />
@@ -179,7 +179,7 @@
           <mxGeometry x="259.5" y="505" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-208" value="Public Subnet1&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="384" y="178.5" width="159" height="102" as="geometry" />
+          <mxGeometry x="384" y="173" width="159" height="102" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-209" value="Data Analysis" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="574.5" y="384.5" width="100" height="30" as="geometry" />
@@ -200,37 +200,37 @@
           <mxGeometry x="399.5" y="312.5" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-215" value="SCOP-RESERVE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="399.5" y="481.5" width="130" height="30" as="geometry" />
+          <mxGeometry x="399.5" y="474" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-216" value="SCOP-MGR" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="399.5" y="351.5" width="130" height="30" as="geometry" />
+          <mxGeometry x="399.5" y="353" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-217" value="SCOP-CORE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="399.5" y="396.5" width="130" height="30" as="geometry" />
+          <mxGeometry x="399.5" y="393" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-218" value="SCOP-DATA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="399.5" y="441.5" width="130" height="30" as="geometry" />
+          <mxGeometry x="399.5" y="434" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-219" value="SCOP-COMPLIANCE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="399.5" y="521.5" width="130" height="30" as="geometry" />
+          <mxGeometry x="399.5" y="515" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-220" value="&lt;font&gt;SCOP-TXPROXY&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="399.5" y="557.5" width="130" height="30" as="geometry" />
+          <mxGeometry x="399.5" y="555" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-221" value="SCOP-REGULATORY" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="399.5" y="595.5" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-222" value="API Gateway" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="399.5" y="201.5" width="130" height="30" as="geometry" />
+          <mxGeometry x="399.5" y="196" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-223" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;SCOP-GATEWAY&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="399.5" y="237.5" width="130" height="30" as="geometry" />
+          <mxGeometry x="399.5" y="232" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-224" value="Public Subnet2&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="556.5" y="178.5" width="140" height="102" as="geometry" />
+          <mxGeometry x="556.5" y="173" width="140" height="102" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-225" value="API Gateway" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="561.5" y="201.5" width="130" height="30" as="geometry" />
+          <mxGeometry x="561.5" y="196" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-226" value="Graph DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="586.5" y="573.5" width="80" height="51" as="geometry" />
