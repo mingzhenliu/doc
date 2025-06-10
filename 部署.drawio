@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0" version="27.1.4">
   <diagram name="SCOP-Deployment" id="deployment-diagram">
-    <mxGraphModel dx="1415" dy="1998" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+    <mxGraphModel dx="1165" dy="1623" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -33,30 +33,6 @@
         </mxCell>
         <mxCell id="secondary-minter-zone" value="Minter Zone&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="720" y="468" width="560" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="p-alb-1" value="ALB" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="93" y="125" width="75" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="p-api-gw-1" value="API Gateway" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="190" y="125" width="129" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="p-scop-mgr-1" value="SCOP-MGR" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="90" y="171" width="80" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="p-scop-core-1" value="SCOP-CORE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="90" y="211" width="80" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="p-scop-data-1" value="SCOP-DATA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="90" y="251" width="80" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="p-compliance-1" value="SCOP-COMPLIANCE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="190" y="171" width="130" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="p-risk-1" value="SCOP-RISK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="190" y="211" width="130" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="p-regulatory-1" value="SCOP-REGULATORY" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="190" y="251" width="128" height="30" as="geometry" />
         </mxCell>
         <mxCell id="p-rds-primary" value="RDS Primary" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="120" y="357" width="80" height="60" as="geometry" />
@@ -100,52 +76,28 @@
         <mxCell id="s-data-analysis" value="Data Analysis" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="1030" y="503" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-5" value="Bank" style="shape=mxgraph.signs.travel.bank;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;flipH=0;" parent="1" vertex="1">
+        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-5" value="Bank" style="shape=mxgraph.signs.travel.bank;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;flipH=1;" parent="1" vertex="1">
           <mxGeometry x="712" y="-127" width="50" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-6" value="&lt;span&gt;BlockChain&lt;/span&gt;" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/cryptocurrency-blockchain-fintech-free/32/Cryptocurrency_blockchain_data-37-128.png;flipH=0;" parent="1" vertex="1">
-          <mxGeometry x="575" y="-127" width="50" height="50" as="geometry" />
+        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-6" value="&lt;span&gt;BlockChain&lt;/span&gt;" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/cryptocurrency-blockchain-fintech-free/32/Cryptocurrency_blockchain_data-37-128.png;flipH=1;" parent="1" vertex="1">
+          <mxGeometry x="883" y="-127" width="50" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-7" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Governance,&lt;br&gt;Risk&amp;nbsp;&amp;amp;&lt;br&gt;Compliance&lt;/font&gt;" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;fontColor=#4277BB;labelBackgroundColor=none;fontSize=12;spacingTop=3;image=img/lib/ibm/security/governance_risk_compliance.svg;imageBackground=none;flipH=0;" parent="1" vertex="1">
-          <mxGeometry x="870" y="-127" width="50" height="50" as="geometry" />
+        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-7" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Governance,&lt;br&gt;Risk&amp;nbsp;&amp;amp;&lt;br&gt;Compliance&lt;/font&gt;" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;fontColor=#4277BB;labelBackgroundColor=none;fontSize=12;spacingTop=3;image=img/lib/ibm/security/governance_risk_compliance.svg;imageBackground=none;flipH=1;" parent="1" vertex="1">
+          <mxGeometry x="560" y="-127" width="50" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-8" value="minter" style="sketch=0;verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;fillColor=#000000;align=center;outlineConnect=0;pointerEvents=1;shape=mxgraph.citrix2.citrix_enterprise_browser;flipH=0;" parent="1" vertex="1">
+        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-8" value="minter" style="sketch=0;verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;fillColor=#000000;align=center;outlineConnect=0;pointerEvents=1;shape=mxgraph.citrix2.citrix_enterprise_browser;flipH=1;" parent="1" vertex="1">
           <mxGeometry x="1018.0999999999999" y="-123.48" width="50" height="42.96" as="geometry" />
         </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-9" value="MPC Wallet" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/ionicons-sharp-vol-2/512/wallet-sharp-128.png;flipH=0;" parent="1" vertex="1">
+        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-9" value="MPC Wallet" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/ionicons-sharp-vol-2/512/wallet-sharp-128.png;flipH=1;" parent="1" vertex="1">
           <mxGeometry x="423" y="-127" width="50" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-10" value="Operator Device (Internal/Remote)" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#505050;shape=mxgraph.mscae.intune.device_os;flipH=0;" parent="1" vertex="1">
+        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-10" value="Operator Device (Internal/Remote)" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#505050;shape=mxgraph.mscae.intune.device_os;flipH=1;" parent="1" vertex="1">
           <mxGeometry x="270" y="-127" width="50" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-27" value="ALB" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="379" y="125" width="75" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-28" value="API Gateway" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="476" y="125" width="129" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-29" value="SCOP-MGR" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="376" y="171" width="80" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-30" value="SCOP-CORE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="376" y="211" width="80" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-31" value="SCOP-DATA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="376" y="251" width="80" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-32" value="SCOP-COMPLIANCE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="476" y="171" width="130" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-33" value="SCOP-RISK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="476" y="211" width="130" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-34" value="SCOP-REGULATORY" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="476" y="251" width="128" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-35" value="ALB" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
+        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-35" value="SCOP-RISK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="746" y="125" width="75" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-36" value="API Gateway" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
+        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-36" value="SCOP-RESERVE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="843" y="125" width="129" height="30" as="geometry" />
         </mxCell>
         <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-37" value="SCOP-MGR" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
@@ -160,35 +112,83 @@
         <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-40" value="SCOP-COMPLIANCE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="843" y="171" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-41" value="SCOP-RISK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
+        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-41" value="&lt;font&gt;SCOP-TXPROXY&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="843" y="211" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-42" value="SCOP-REGULATORY" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="843" y="251" width="128" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-60" value="ALB" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="1038" y="128" width="75" height="30" as="geometry" />
+        <mxCell id="YOtu2TZB6lG9206_glAB-2" value="SCOP-RISK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1026" y="125" width="75" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-61" value="API Gateway" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="1135" y="128" width="129" height="30" as="geometry" />
+        <mxCell id="YOtu2TZB6lG9206_glAB-3" value="SCOP-RESERVE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1123" y="125" width="129" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-62" value="SCOP-MGR" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="1035" y="174" width="80" height="30" as="geometry" />
+        <mxCell id="YOtu2TZB6lG9206_glAB-4" value="SCOP-MGR" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1023" y="171" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-63" value="SCOP-CORE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="1035" y="214" width="80" height="30" as="geometry" />
+        <mxCell id="YOtu2TZB6lG9206_glAB-5" value="SCOP-CORE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1023" y="211" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-64" value="SCOP-DATA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="1035" y="254" width="80" height="30" as="geometry" />
+        <mxCell id="YOtu2TZB6lG9206_glAB-6" value="SCOP-DATA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1023" y="251" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-65" value="SCOP-COMPLIANCE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="1135" y="174" width="130" height="30" as="geometry" />
+        <mxCell id="YOtu2TZB6lG9206_glAB-7" value="SCOP-COMPLIANCE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1123" y="171" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-66" value="SCOP-RISK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="1135" y="214" width="130" height="30" as="geometry" />
+        <mxCell id="YOtu2TZB6lG9206_glAB-8" value="&lt;font&gt;SCOP-TXPROXY&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1123" y="211" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-67" value="SCOP-REGULATORY" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="1135" y="254" width="128" height="30" as="geometry" />
+        <mxCell id="YOtu2TZB6lG9206_glAB-9" value="SCOP-REGULATORY" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1123" y="251" width="128" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOtu2TZB6lG9206_glAB-10" value="SCOP-RISK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="378" y="125" width="75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOtu2TZB6lG9206_glAB-11" value="SCOP-RESERVE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="475" y="125" width="129" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOtu2TZB6lG9206_glAB-12" value="SCOP-MGR" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="375" y="171" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOtu2TZB6lG9206_glAB-13" value="SCOP-CORE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="375" y="211" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOtu2TZB6lG9206_glAB-14" value="SCOP-DATA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="375" y="251" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOtu2TZB6lG9206_glAB-15" value="SCOP-COMPLIANCE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="475" y="171" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOtu2TZB6lG9206_glAB-16" value="&lt;font&gt;SCOP-TXPROXY&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="475" y="211" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOtu2TZB6lG9206_glAB-17" value="SCOP-REGULATORY" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="475" y="251" width="128" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOtu2TZB6lG9206_glAB-18" value="SCOP-RISK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="97" y="125" width="75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOtu2TZB6lG9206_glAB-19" value="SCOP-RESERVE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="194" y="125" width="129" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOtu2TZB6lG9206_glAB-20" value="SCOP-MGR" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="94" y="171" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOtu2TZB6lG9206_glAB-21" value="SCOP-CORE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="94" y="211" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOtu2TZB6lG9206_glAB-22" value="SCOP-DATA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="94" y="251" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOtu2TZB6lG9206_glAB-23" value="SCOP-COMPLIANCE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="194" y="171" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOtu2TZB6lG9206_glAB-24" value="&lt;font&gt;SCOP-TXPROXY&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="194" y="211" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOtu2TZB6lG9206_glAB-25" value="SCOP-REGULATORY" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="194" y="251" width="128" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
