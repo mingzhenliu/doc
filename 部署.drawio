@@ -20,22 +20,22 @@
           <mxGeometry x="249.5" y="446" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-5" value="Bank" style="shape=mxgraph.signs.travel.bank;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;flipH=1;" parent="1" vertex="1">
-          <mxGeometry x="506" y="-115.48" width="50" height="50" as="geometry" />
+          <mxGeometry x="456" y="-115.48" width="50" height="50" as="geometry" />
         </mxCell>
         <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-6" value="&lt;span&gt;BlockChain&lt;/span&gt;" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/cryptocurrency-blockchain-fintech-free/32/Cryptocurrency_blockchain_data-37-128.png;flipH=1;" parent="1" vertex="1">
-          <mxGeometry x="648" y="-115.48" width="50" height="50" as="geometry" />
+          <mxGeometry x="598" y="-115.48" width="50" height="50" as="geometry" />
         </mxCell>
         <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-7" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Governance,&lt;br&gt;Risk&amp;nbsp;&amp;amp;&lt;br&gt;Compliance&lt;/font&gt;" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;fontColor=#4277BB;labelBackgroundColor=none;fontSize=12;spacingTop=3;image=img/lib/ibm/security/governance_risk_compliance.svg;imageBackground=none;flipH=1;" parent="1" vertex="1">
-          <mxGeometry x="790" y="-115.48" width="50" height="50" as="geometry" />
+          <mxGeometry x="740" y="-115.48" width="50" height="50" as="geometry" />
         </mxCell>
         <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-8" value="minter" style="sketch=0;verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;fillColor=#000000;align=center;outlineConnect=0;pointerEvents=1;shape=mxgraph.citrix2.citrix_enterprise_browser;flipH=1;" parent="1" vertex="1">
-          <mxGeometry x="1074" y="-111.96000000000001" width="50" height="42.96" as="geometry" />
+          <mxGeometry x="1024" y="-111.96000000000001" width="50" height="42.96" as="geometry" />
         </mxCell>
         <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-9" value="MPC Wallet" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/ionicons-sharp-vol-2/512/wallet-sharp-128.png;flipH=1;" parent="1" vertex="1">
-          <mxGeometry x="364" y="-115.48" width="50" height="50" as="geometry" />
+          <mxGeometry x="314" y="-115.48" width="50" height="50" as="geometry" />
         </mxCell>
         <mxCell id="d7Y6Om-YrFz8lhCFB2Uh-10" value="Operator Device (Internal/Remote)" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#505050;shape=mxgraph.mscae.intune.device_os;flipH=1;" parent="1" vertex="1">
-          <mxGeometry x="222" y="-115.48" width="50" height="50" as="geometry" />
+          <mxGeometry x="172" y="-115.48" width="50" height="50" as="geometry" />
         </mxCell>
         <mxCell id="YOtu2TZB6lG9206_glAB-33" value="Global Load Balancer / Route 53" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffcccc;strokeColor=#ff0000;strokeWidth=2;fontSize=12;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="605" y="-10" width="200" height="40" as="geometry" />
@@ -305,7 +305,7 @@
           <mxGeometry x="1006" y="666" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="AXIh3VfZ2oeEKB4JFue_-26" value="COS" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.bucket;fillColor=#000000;gradientColor=none;flipH=1;" vertex="1" parent="1">
-          <mxGeometry x="927" y="-121.23" width="60" height="61.5" as="geometry" />
+          <mxGeometry x="877" y="-121.23" width="60" height="61.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
