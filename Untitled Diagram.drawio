@@ -330,6 +330,16 @@
         <mxCell id="KaG9E8oDeQpPBJqDgfHn-6" value="COS" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.bucket;fillColor=#000000;gradientColor=none;" vertex="1" parent="1">
           <mxGeometry x="100" y="470" width="42" height="38.5" as="geometry" />
         </mxCell>
+        <mxCell id="KaG9E8oDeQpPBJqDgfHn-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.94;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fwhBZkmsll9hYJDBTmuX-102" target="KaG9E8oDeQpPBJqDgfHn-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-102" y="546" as="sourcePoint" />
+            <mxPoint x="-52" y="496" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="193" y="405" />
+              <mxPoint x="193" y="489" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
