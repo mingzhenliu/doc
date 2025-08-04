@@ -10,10 +10,10 @@
         <mxCell id="B" value="银行转法币到账户&lt;br&gt;（备注铸造ID）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;" parent="1" vertex="1">
           <mxGeometry x="254" y="60" width="160" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="C" value="机构用minterOwner发起mintRequest" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" parent="1" vertex="1">
+        <mxCell id="C" value="机构发起mintRequest" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" parent="1" vertex="1">
           <mxGeometry x="460" y="60" width="200" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="E" value="链上产生RequestMintEvent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" parent="1" vertex="1">
+        <mxCell id="E" value="链上产生requestMintEvent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" parent="1" vertex="1">
           <mxGeometry x="710" y="60" width="180" height="50" as="geometry" />
         </mxCell>
         <mxCell id="F" value="运营系统监听事件，生成审批流" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" parent="1" vertex="1">
