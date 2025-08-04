@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" version="28.0.7">
   <diagram name="香港机构客户认证业务流程" id="i58AlM-ckMyJ5Maa0vj6">
-    <mxGraphModel dx="1671" dy="789" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1944" dy="1198" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -28,7 +28,7 @@
         <mxCell id="lqRtal-pTQRRfgfTgEZP-39" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;" parent="1" vertex="1">
           <mxGeometry x="-77" y="380" width="894" height="88" as="geometry" />
         </mxCell>
-        <mxCell id="200" value="留资（信息收集/意向登记）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;" parent="1" vertex="1">
+        <mxCell id="200" value="分销商留资（信息收集/意向登记）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;" parent="1" vertex="1">
           <mxGeometry x="-203" y="296" width="180" height="50" as="geometry" />
         </mxCell>
         <mxCell id="201" value="初筛（初步筛选/资质审核）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;" parent="1" vertex="1">
@@ -43,7 +43,7 @@
         <mxCell id="e201" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="201" target="202" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="S4tFXiExohbChBpdp41I-29" value="机构客户发起分销商注册申请" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" parent="1" vertex="1">
+        <mxCell id="S4tFXiExohbChBpdp41I-29" value="分销商发起分销商注册申请" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" parent="1" vertex="1">
           <mxGeometry x="-207" y="510" width="180" height="50" as="geometry" />
         </mxCell>
         <mxCell id="S4tFXiExohbChBpdp41I-30" value="线上提交资料（公司、银行）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;" parent="1" vertex="1">
@@ -69,14 +69,10 @@
         <mxCell id="S4tFXiExohbChBpdp41I-34" value="风险等级判断" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;" parent="1" vertex="1">
           <mxGeometry x="673" y="621" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6oCklSgaxmHuDCZmIr8I-219" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;dashed=1;dashPattern=1 2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="S4tFXiExohbChBpdp41I-40" target="S4tFXiExohbChBpdp41I-32" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="-138" y="671" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="6oCklSgaxmHuDCZmIr8I-241" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" parent="1" source="S4tFXiExohbChBpdp41I-40" target="S4tFXiExohbChBpdp41I-42" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lqugy-pSAJGFPaWYnTzA-202" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;dashed=1;" edge="1" parent="1" source="S4tFXiExohbChBpdp41I-40" target="S4tFXiExohbChBpdp41I-32">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="S4tFXiExohbChBpdp41I-40" value="分销商注册成功" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" parent="1" vertex="1">
