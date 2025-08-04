@@ -164,8 +164,8 @@
         <mxCell id="zMjqmTBHtS1OJDe74mQP-2" value="burnReceiver账号授权&lt;div&gt;minterContract合约赎回额度的稳定币&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;flipH=1;" vertex="1" parent="1">
           <mxGeometry x="424" y="-36" width="220" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="zMjqmTBHtS1OJDe74mQP-10" value="动态审批流" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="454" y="360" width="80" height="30" as="geometry" />
+        <mxCell id="zMjqmTBHtS1OJDe74mQP-10" value="根据赎回金额&lt;div&gt;动态匹配审批流&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="424" y="360" width="110" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
