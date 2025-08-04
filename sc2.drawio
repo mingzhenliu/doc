@@ -1,9 +1,102 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" version="28.0.7">
-  <diagram name="Page-1" id="Xif6hau1T8smHaNIJtoW">
-    <mxGraphModel>
+<mxfile host="app.diagrams.net">
+  <diagram name="稳定币Minter注册与合规流程-优化版">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="900" math="0" shadow="0">
       <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <!-- 主流程 -->
+        <mxCell id="n1" value="机构客户发起注册申请" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="60" y="200" width="180" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="n2" value="线上提交资料（公司、银行、链上账户）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="260" y="200" width="240" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="n3" value="KYC/KYB合规校验" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="540" y="200" width="180" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="n4" value="风险等级判断" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="760" y="195" width="100" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="n5" value="自动审批通过" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;" vertex="1" parent="1">
+          <mxGeometry x="900" y="160" width="160" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="n6" value="线下补充核查" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="900" y="240" width="160" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="n7" value="原件核查/实地尽调/视频见证" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="240" width="200" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="n8" value="增强尽调与人工复核" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="240" width="180" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="n9" value="合规审核结果" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="1540" y="240" width="100" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="n10" value="链上部署合约并分配权限（minterOwner多签/MPC）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="1680" y="200" width="260" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="n11" value="拒绝注册" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="1680" y="280" width="160" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="n12" value="持续监控与定期复审" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="1980" y="200" width="180" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="n13" value="异常交易报警与应急处理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="2200" y="200" width="200" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="n14" value="业务正式开展（mint/赎回等）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="2420" y="200" width="200" height="50" as="geometry"/>
+        </mxCell>
+        <!-- KYC细化分支 -->
+        <mxCell id="k1" value="上传个人资料（身份证明、住址证明等）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;" vertex="1" parent="n3">
+          <mxGeometry x="-200" y="70" width="220" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="k2" value="制裁名单/PEP筛查" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="n3">
+          <mxGeometry x="-200" y="120" width="180" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="k3" value="活体检测/视频见证（高风险）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;" vertex="1" parent="n3">
+          <mxGeometry x="-200" y="170" width="200" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="k4" value="AML风险评分" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="n3">
+          <mxGeometry x="-200" y="220" width="140" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="k5" value="电子签名合规声明" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="n3">
+          <mxGeometry x="-200" y="270" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <!-- KYB细化分支 -->
+        <mxCell id="b1" value="上传企业资料（注册证书、章程、UBO等）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;" vertex="1" parent="n3">
+          <mxGeometry x="200" y="70" width="240" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="b2" value="股权结构透明化校验" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="n3">
+          <mxGeometry x="200" y="120" width="180" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="b3" value="业务真实性核查（合同、流水等）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;" vertex="1" parent="n3">
+          <mxGeometry x="200" y="170" width="200" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="b4" value="实地尽调/原件核查（高风险）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;" vertex="1" parent="n3">
+          <mxGeometry x="200" y="220" width="200" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="b5" value="企业AML风险评分" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="n3">
+          <mxGeometry x="200" y="270" width="140" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="b6" value="定期复审与信息更新" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="n3">
+          <mxGeometry x="200" y="320" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <!-- 连线 -->
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n1" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n2" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n3" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" value="低风险" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n4" target="n5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" value="高风险/疑点" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n4" target="n6"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n6" target="n7"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n7" target="n8"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n8" target="n9"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e9" value="通过" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n9" target="n10"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e10" value="不通过" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n9" target="n11"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n5" target="n10"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n10" target="n12"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e13" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n12" target="n13"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e14" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n10" target="n14"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
   </diagram>
