@@ -23,7 +23,7 @@
           <mxGeometry x="39" y="-42" width="160" height="50" as="geometry" />
         </mxCell>
         <mxCell id="C" value="机构发起burnRequest" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;flipH=1;" parent="1" vertex="1">
-          <mxGeometry x="639" y="-42" width="146" height="50" as="geometry" />
+          <mxGeometry x="599" y="-42" width="146" height="50" as="geometry" />
         </mxCell>
         <mxCell id="E" value="链上产生requestBrunEvent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;flipH=1;" parent="1" vertex="1">
           <mxGeometry x="859" y="-42" width="180" height="50" as="geometry" />
@@ -44,7 +44,7 @@
           <mxGeometry x="665" y="270" width="175" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Q" value="流程结束" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="982.0000000000005" y="556" width="100" height="40" as="geometry" />
+          <mxGeometry x="964.0000000000005" y="556" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="C" target="E" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -141,7 +141,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="zMjqmTBHtS1OJDe74mQP-2" value="burnReceiver账号授权&lt;div&gt;minterContract合约赎回额度的稳定币&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;flipH=1;strokeColor=#6c8ebf;dashed=1;dashPattern=12 12;" vertex="1" parent="1">
-          <mxGeometry x="344" y="-42" width="220" height="50" as="geometry" />
+          <mxGeometry x="286" y="-42" width="220" height="50" as="geometry" />
         </mxCell>
         <mxCell id="zMjqmTBHtS1OJDe74mQP-10" value="根据赎回金额&lt;div&gt;动态匹配审批流&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="424" y="311" width="110" height="30" as="geometry" />
@@ -174,7 +174,7 @@
           <mxGeometry x="665" y="338" width="175" height="40" as="geometry" />
         </mxCell>
         <mxCell id="zMjqmTBHtS1OJDe74mQP-25" value="修改链上订单状态" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="877" y="338" width="150" height="40" as="geometry" />
+          <mxGeometry x="877" y="338" width="115" height="40" as="geometry" />
         </mxCell>
         <mxCell id="zMjqmTBHtS1OJDe74mQP-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="F" target="zMjqmTBHtS1OJDe74mQP-32">
           <mxGeometry relative="1" as="geometry">
@@ -195,8 +195,8 @@
             <mxPoint x="1014" y="556" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="zMjqmTBHtS1OJDe74mQP-40" value="异常处理/稳定币退回" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
-          <mxGeometry x="929.5" y="204" width="169" height="40" as="geometry" />
+        <mxCell id="zMjqmTBHtS1OJDe74mQP-40" value="稳定币退回" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="929.5" y="212" width="169" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
