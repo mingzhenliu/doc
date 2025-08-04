@@ -1,10 +1,10 @@
 <mxfile host="app.diagrams.net">
-  <diagram name="流程图" id="流程图1">
+  <diagram name="流程图">
     <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
-        <!-- 节点定义 -->
+        <!-- 节点 -->
         <mxCell id="A" value="机构在SCMS申请铸造ID" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
           <mxGeometry x="60" y="60" width="160" height="50" as="geometry"/>
         </mxCell>
@@ -70,11 +70,11 @@
         <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="E" target="F"><mxGeometry relative="1" as="geometry"/></mxCell>
         <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="F" target="G"><mxGeometry relative="1" as="geometry"/></mxCell>
         <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="G" target="H"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="H" target="Z1"><mxGeometry relative="1" as="geometry"><mxPoint x="1700" y="60" as="targetPoint"/><mxPoint x="1600" y="40" as="sourcePoint"/><Array as=\"points\"><mxPoint x=\"1600\" y=\"40\"/></Array></mxGeometry><mxCell id=\"e8label\" value=\"否\" style=\"text;html=1;align=center;verticalAlign=middle;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"0.5\" y=\"-1\" width=\"40\" height=\"20\" as=\"geometry\" relative=\"1\"/></mxCell></mxCell>
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;label=否;" edge="1" parent="1" source="H" target="Z1"><mxGeometry relative="1" as="geometry"/></mxCell>
         <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="H" target="I"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="I" target="Z2"><mxGeometry relative="1" as="geometry"><mxPoint x="1860" y="60" as="targetPoint"/><mxPoint x="1760" y="120" as="sourcePoint"/><Array as=\"points\"><mxPoint x=\"1760\" y=\"120\"/></Array></mxGeometry><mxCell id=\"e10label\" value=\"否\" style=\"text;html=1;align=center;verticalAlign=middle;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"0.5\" y=\"-1\" width=\"40\" height=\"20\" as=\"geometry\" relative=\"1\"/></mxCell></mxCell>
+        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;label=否;" edge="1" parent="1" source="I" target="Z2"><mxGeometry relative="1" as="geometry"/></mxCell>
         <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="I" target="J"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="J" target="K"><mxGeometry relative="1" as="geometry"><mxPoint x="2020" y="100" as="targetPoint"/><mxPoint x="2000" y="140" as="sourcePoint"/><Array as=\"points\"><mxPoint x=\"2000\" y=\"140\"/></Array></mxGeometry><mxCell id=\"e12label\" value=\"是\" style=\"text;html=1;align=center;verticalAlign=middle;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"0.5\" y=\"-1\" width=\"40\" height=\"20\" as=\"geometry\" relative=\"1\"/></mxCell></mxCell>
+        <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;label=是;" edge="1" parent="1" source="J" target="K"><mxGeometry relative="1" as="geometry"/></mxCell>
         <mxCell id="e13" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="J" target="L"><mxGeometry relative="1" as="geometry"/></mxCell>
         <mxCell id="e14" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="L" target="M"><mxGeometry relative="1" as="geometry"/></mxCell>
         <mxCell id="e15" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="M" target="N"><mxGeometry relative="1" as="geometry"/></mxCell>
