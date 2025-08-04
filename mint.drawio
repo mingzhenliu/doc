@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="A" value="机构在SCMS申请铸造ID" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;flipH=0;" parent="1" vertex="1">
-          <mxGeometry x="66" y="-34" width="160" height="50" as="geometry" />
+          <mxGeometry x="60" y="-34" width="160" height="50" as="geometry" />
         </mxCell>
         <mxCell id="B" value="机构向银行转账法币到结算账号&lt;div&gt;（备注铸造ID）&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;flipH=0;" parent="1" vertex="1">
           <mxGeometry x="315" y="-34" width="200" height="50" as="geometry" />
@@ -19,14 +19,14 @@
         <mxCell id="E" value="链上产生requestMintEvent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;flipH=0;" parent="1" vertex="1">
           <mxGeometry x="862" y="-34" width="180" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="V3N9yQ6HWGTea3L539rp-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="H">
+        <mxCell id="V3N9yQ6HWGTea3L539rp-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="F" target="H">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="246" y="86" as="sourcePoint" />
             <mxPoint x="283.5" y="86" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="F" value="稳定版运营系统&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;生成铸造订单&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" parent="1" vertex="1">
-          <mxGeometry x="99" y="61" width="160" height="50" as="geometry" />
+          <mxGeometry x="60" y="61" width="160" height="50" as="geometry" />
         </mxCell>
         <mxCell id="H" value="法币到账且通过AML？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;" parent="1" vertex="1">
           <mxGeometry x="283.5" y="40" width="121" height="92" as="geometry" />
@@ -205,7 +205,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="V3N9yQ6HWGTea3L539rp-42" value="配额调整流程" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="71" y="180.5" width="143" height="37" as="geometry" />
+          <mxGeometry x="60" y="180.5" width="154" height="37" as="geometry" />
         </mxCell>
         <mxCell id="V3N9yQ6HWGTea3L539rp-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="V3N9yQ6HWGTea3L539rp-45" target="Q">
           <mxGeometry relative="1" as="geometry" />
