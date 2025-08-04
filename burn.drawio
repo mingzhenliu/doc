@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" version="28.0.7">
   <diagram name="mint流程补充版" id="0">
-    <mxGraphModel dx="1831" dy="1189" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1842" dy="1414" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -70,13 +70,18 @@
         <mxCell id="zMjqmTBHtS1OJDe74mQP-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="V3N9yQ6HWGTea3L539rp-3" target="Z2">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="581" y="233" />
-              <mxPoint x="581" y="91" />
+              <mxPoint x="600" y="233" />
+              <mxPoint x="600" y="91" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="zMjqmTBHtS1OJDe74mQP-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="V3N9yQ6HWGTea3L539rp-3" target="V3N9yQ6HWGTea3L539rp-5">
+        <mxCell id="zMjqmTBHtS1OJDe74mQP-49" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;curved=0;" edge="1" parent="1" source="V3N9yQ6HWGTea3L539rp-3" target="V3N9yQ6HWGTea3L539rp-5">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zMjqmTBHtS1OJDe74mQP-50" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zMjqmTBHtS1OJDe74mQP-49">
+          <mxGeometry x="0.0822" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="V3N9yQ6HWGTea3L539rp-3" value="财务审批" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="454" y="193" width="70" height="80" as="geometry" />
@@ -94,8 +99,8 @@
         <mxCell id="zMjqmTBHtS1OJDe74mQP-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="V3N9yQ6HWGTea3L539rp-4" target="Z2">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="583" y="173" />
-              <mxPoint x="583" y="91" />
+              <mxPoint x="600" y="173" />
+              <mxPoint x="600" y="91" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -108,10 +113,7 @@
         <mxCell id="zMjqmTBHtS1OJDe74mQP-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="V3N9yQ6HWGTea3L539rp-5" target="Z2">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="580" y="252" />
-              <mxPoint x="580" y="174" />
-              <mxPoint x="585" y="174" />
-              <mxPoint x="585" y="91" />
+              <mxPoint x="598" y="91" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -195,9 +197,6 @@
         </mxCell>
         <mxCell id="zMjqmTBHtS1OJDe74mQP-40" value="异常处理/稳定币退回" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
           <mxGeometry x="929.5" y="204" width="169" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="zMjqmTBHtS1OJDe74mQP-47" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=none;curved=0;" edge="1" parent="1" source="V3N9yQ6HWGTea3L539rp-3" target="V3N9yQ6HWGTea3L539rp-5">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
