@@ -19,7 +19,7 @@
         <mxCell id="zMjqmTBHtS1OJDe74mQP-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A" target="zMjqmTBHtS1OJDe74mQP-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="A" value="机构在SCMS申请赎回ID" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;flipH=1;strokeColor=#9673a6;" parent="1" vertex="1">
+        <mxCell id="A" value="分销商在铸造服务申请赎回ID" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;flipH=1;strokeColor=#9673a6;" parent="1" vertex="1">
           <mxGeometry x="39" y="-42" width="160" height="50" as="geometry" />
         </mxCell>
         <mxCell id="C" value="机构发起burnRequest" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;flipH=1;" parent="1" vertex="1">
