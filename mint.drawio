@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" version="28.0.7">
   <diagram name="mint流程补充版" id="0">
-    <mxGraphModel dx="1165" dy="1123" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1346" dy="1268" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -11,7 +11,7 @@
           <mxGeometry x="315" y="-34" width="200" height="50" as="geometry" />
         </mxCell>
         <mxCell id="C1" value="银行存证法币转账记录上链" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;dashed=1;dashPattern=8 8;" parent="1" vertex="1">
-          <mxGeometry x="763" y="315" width="180" height="50" as="geometry" />
+          <mxGeometry x="780" y="281" width="180" height="50" as="geometry" />
         </mxCell>
         <mxCell id="C" value="机构发起mintRequest" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;flipH=0;" parent="1" vertex="1">
           <mxGeometry x="593" y="-34" width="180" height="50" as="geometry" />
@@ -19,21 +19,25 @@
         <mxCell id="E" value="链上产生requestMintEvent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;flipH=0;" parent="1" vertex="1">
           <mxGeometry x="862" y="-34" width="180" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="V3N9yQ6HWGTea3L539rp-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="F" target="H">
+        <mxCell id="V3N9yQ6HWGTea3L539rp-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="H">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="296.5" y="86" as="targetPoint" />
+            <mxPoint x="246" y="86" as="sourcePoint" />
+            <mxPoint x="283.5" y="86" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="F" value="稳定版运营系统&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;生成铸造订单&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" parent="1" vertex="1">
-          <mxGeometry x="106" y="61" width="160" height="50" as="geometry" />
+          <mxGeometry x="99" y="61" width="160" height="50" as="geometry" />
         </mxCell>
         <mxCell id="H" value="法币到账且通过AML？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;" parent="1" vertex="1">
-          <mxGeometry x="296.5" y="40" width="121" height="92" as="geometry" />
+          <mxGeometry x="283.5" y="40" width="121" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="V3N9yQ6HWGTea3L539rp-46" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=0;" edge="1" parent="1" source="I" target="V3N9yQ6HWGTea3L539rp-4">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="I" value="额度在许可范围内？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;" parent="1" vertex="1">
-          <mxGeometry x="292" y="154" width="130" height="90" as="geometry" />
+          <mxGeometry x="279" y="154" width="130" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="V3N9yQ6HWGTea3L539rp-27" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Z2" target="Q">
+        <mxCell id="V3N9yQ6HWGTea3L539rp-27" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Z2" target="V3N9yQ6HWGTea3L539rp-45">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1099" y="714" as="targetPoint" />
             <Array as="points">
@@ -42,20 +46,9 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Z2" value="拒绝铸造" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" parent="1" vertex="1">
-          <mxGeometry x="902" y="66" width="100" height="40" as="geometry" />
+          <mxGeometry x="833" y="66" width="169" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="V3N9yQ6HWGTea3L539rp-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="J" target="K">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="V3N9yQ6HWGTea3L539rp-32" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="V3N9yQ6HWGTea3L539rp-18">
-          <mxGeometry x="0.0372" y="5" relative="1" as="geometry">
-            <mxPoint x="1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="J" value="金额是否允许自动通过？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;" parent="1" vertex="1">
-          <mxGeometry x="280.5" y="266" width="151.5" height="81" as="geometry" />
-        </mxCell>
-        <mxCell id="V3N9yQ6HWGTea3L539rp-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.647;exitY=-0.019;exitDx=0;exitDy=0;dashed=1;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="K" target="C1">
+        <mxCell id="V3N9yQ6HWGTea3L539rp-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="K" target="C1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="895" y="391" as="sourcePoint" />
           </mxGeometry>
@@ -69,10 +62,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="K" value="法币从结算账户转移到储备账户" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" parent="1" vertex="1">
-          <mxGeometry x="620.5" y="376" width="175" height="40" as="geometry" />
+          <mxGeometry x="647" y="381" width="175" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Q" value="流程结束" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="962.0000000000005" y="618" width="100" height="40" as="geometry" />
+          <mxGeometry x="961.0000000000005" y="632" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="A" target="B" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -86,12 +79,14 @@
         <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="E" target="F" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1207.91" y="68" as="sourcePoint" />
-            <mxPoint x="478.00090909090903" y="125" as="targetPoint" />
+            <mxPoint x="48" y="95" as="targetPoint" />
             <Array as="points">
               <mxPoint x="1072" y="-9" />
               <mxPoint x="1072" y="30" />
-              <mxPoint x="56" y="30" />
-              <mxPoint x="56" y="98" />
+              <mxPoint x="18" y="30" />
+              <mxPoint x="18" y="85" />
+              <mxPoint x="72" y="85" />
+              <mxPoint x="48" y="86" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -108,7 +103,7 @@
         </mxCell>
         <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" target="I" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="357" y="132" as="sourcePoint" />
+            <mxPoint x="344" y="132" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="V3N9yQ6HWGTea3L539rp-39" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e9">
@@ -116,33 +111,13 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;label=否;" parent="1" source="I" target="Z2" edge="1">
+        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;label=否;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="I" target="V3N9yQ6HWGTea3L539rp-42" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="459.86868686868684" y="228.090909090909" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="V3N9yQ6HWGTea3L539rp-29" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e10">
           <mxGeometry x="-0.7508" y="-1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="I" target="J" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="394.9999999999998" y="272.9999999999998" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="V3N9yQ6HWGTea3L539rp-40" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e11">
-          <mxGeometry x="0.2204" y="-1" relative="1" as="geometry">
-            <mxPoint y="1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e13" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="J" target="V3N9yQ6HWGTea3L539rp-4" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="612" y="353" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="V3N9yQ6HWGTea3L539rp-34" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e13">
-          <mxGeometry x="-0.5294" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
@@ -154,13 +129,13 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="V3N9yQ6HWGTea3L539rp-12" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;curved=0;" edge="1" parent="1" source="V3N9yQ6HWGTea3L539rp-3" target="V3N9yQ6HWGTea3L539rp-5">
+        <mxCell id="V3N9yQ6HWGTea3L539rp-12" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;curved=0;" edge="1" parent="1" source="V3N9yQ6HWGTea3L539rp-3" target="V3N9yQ6HWGTea3L539rp-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="V3N9yQ6HWGTea3L539rp-3" value="财务审批" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="565" y="264" width="70" height="80" as="geometry" />
+          <mxGeometry x="454" y="304" width="70" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="V3N9yQ6HWGTea3L539rp-7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;curved=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="V3N9yQ6HWGTea3L539rp-4" target="V3N9yQ6HWGTea3L539rp-3">
+        <mxCell id="V3N9yQ6HWGTea3L539rp-7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;curved=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="V3N9yQ6HWGTea3L539rp-4" target="V3N9yQ6HWGTea3L539rp-3">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="496" y="443" as="targetPoint" />
           </mxGeometry>
@@ -170,21 +145,16 @@
             <mxPoint x="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="V3N9yQ6HWGTea3L539rp-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="V3N9yQ6HWGTea3L539rp-4" target="Z2">
+        <mxCell id="V3N9yQ6HWGTea3L539rp-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="V3N9yQ6HWGTea3L539rp-4" target="Z2">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="499" y="224" />
-              <mxPoint x="952" y="224" />
+              <mxPoint x="412" y="228" />
+              <mxPoint x="918" y="228" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="V3N9yQ6HWGTea3L539rp-31" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="V3N9yQ6HWGTea3L539rp-9">
-          <mxGeometry x="-0.036" y="1" relative="1" as="geometry">
-            <mxPoint x="1" as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="V3N9yQ6HWGTea3L539rp-4" value="合规审批" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="459" y="264" width="80" height="82" as="geometry" />
+          <mxGeometry x="368" y="244" width="87" height="80" as="geometry" />
         </mxCell>
         <mxCell id="V3N9yQ6HWGTea3L539rp-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="V3N9yQ6HWGTea3L539rp-5" target="Z2">
           <mxGeometry relative="1" as="geometry">
@@ -198,7 +168,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="V3N9yQ6HWGTea3L539rp-5" value="风险审批" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="669" y="264" width="80" height="80" as="geometry" />
+          <mxGeometry x="540.5" y="361" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="V3N9yQ6HWGTea3L539rp-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="V3N9yQ6HWGTea3L539rp-13" target="Z2">
           <mxGeometry relative="1" as="geometry" />
@@ -217,19 +187,31 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="V3N9yQ6HWGTea3L539rp-13" value="铸造校验法币转账存证通过？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;" vertex="1" parent="1">
-          <mxGeometry x="614" y="500" width="188" height="90" as="geometry" />
+          <mxGeometry x="640.5" y="514" width="188" height="90" as="geometry" />
         </mxCell>
         <mxCell id="V3N9yQ6HWGTea3L539rp-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="V3N9yQ6HWGTea3L539rp-19" target="V3N9yQ6HWGTea3L539rp-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="V3N9yQ6HWGTea3L539rp-19" value="铸造" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
-          <mxGeometry x="620.5" y="442" width="175" height="40" as="geometry" />
+          <mxGeometry x="647" y="451" width="175" height="40" as="geometry" />
         </mxCell>
         <mxCell id="V3N9yQ6HWGTea3L539rp-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="V3N9yQ6HWGTea3L539rp-24" target="Q">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="V3N9yQ6HWGTea3L539rp-24" value="铸造成功" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
-          <mxGeometry x="620.5" y="618" width="175" height="40" as="geometry" />
+          <mxGeometry x="647" y="632" width="175" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="V3N9yQ6HWGTea3L539rp-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="V3N9yQ6HWGTea3L539rp-42" target="V3N9yQ6HWGTea3L539rp-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V3N9yQ6HWGTea3L539rp-42" value="配额调整流程" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="71" y="180.5" width="143" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="V3N9yQ6HWGTea3L539rp-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="V3N9yQ6HWGTea3L539rp-45" target="Q">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V3N9yQ6HWGTea3L539rp-45" value="异常处理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="927.5" y="345" width="169" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
