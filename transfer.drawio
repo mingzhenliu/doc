@@ -1,88 +1,161 @@
-<mxfile host="app.diagrams.net">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" version="28.0.7">
   <diagram name="transfer管控流程" id="transfer-control-flow">
-    <mxGraphModel dx="1420" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+    <mxGraphModel dx="338261" dy="271224" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
       <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        
-        <!-- 开始 -->
-        <mxCell id="start" value="开始" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;" vertex="1" parent="1">
-          <mxGeometry x="80" y="60" width="80" height="40" as="geometry"/>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RIx0az5tzrJqE075_1Bo-36" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;合规合约&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="85" y="197" width="643" height="491" as="geometry" />
         </mxCell>
-        
-        <!-- 黑名单校验 -->
-        <mxCell id="blacklist" value="黑名单校验" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
-          <mxGeometry x="220" y="60" width="120" height="60" as="geometry"/>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-6" value="&lt;div&gt;稳定币合约&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="88" y="-19" width="636" height="208" as="geometry" />
         </mxCell>
-        <mxCell id="blacklist_no" value="拒绝转账" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
-          <mxGeometry x="400" y="30" width="100" height="40" as="geometry"/>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="start" target="blacklist">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        
-        <!-- 司法冻结校验 -->
-        <mxCell id="freeze" value="司法冻结校验" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;" vertex="1" parent="1">
-          <mxGeometry x="220" y="150" width="120" height="60" as="geometry"/>
+        <mxCell id="start" value="开始" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;" parent="1" vertex="1">
+          <mxGeometry x="137" y="-11" width="80" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="freeze_no" value="拒绝转账" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
-          <mxGeometry x="400" y="120" width="100" height="40" as="geometry"/>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=0;" edge="1" parent="1" source="blacklist" target="freeze">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        
-        <!-- DID校验 -->
-        <mxCell id="did" value="接收人是否注册DID" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
-          <mxGeometry x="220" y="240" width="120" height="60" as="geometry"/>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-10" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RIx0az5tzrJqE075_1Bo-2">
+          <mxGeometry x="-0.7224" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="did_no" value="拒绝转账" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
-          <mxGeometry x="400" y="210" width="100" height="40" as="geometry"/>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="blacklist" target="RIx0az5tzrJqE075_1Bo-4">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        
-        <!-- 白名单校验 -->
-        <mxCell id="whitelist" value="接收人是否白名单地址" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
-          <mxGeometry x="220" y="330" width="120" height="60" as="geometry"/>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-31" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RIx0az5tzrJqE075_1Bo-7">
+          <mxGeometry x="-0.6464" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="whitelist_no" value="拒绝转账" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
-          <mxGeometry x="400" y="300" width="100" height="40" as="geometry"/>
+        <mxCell id="blacklist" value="是否黑名单" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;" parent="1" vertex="1">
+          <mxGeometry x="117" y="52" width="120" height="60" as="geometry" />
         </mxCell>
-        
-        <!-- 审核通过的交易请求 -->
-        <mxCell id="request" value="是否审核通过的交易请求" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
-          <mxGeometry x="220" y="420" width="120" height="60" as="geometry"/>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="freeze" target="did">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="request_no" value="拒绝转账" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
-          <mxGeometry x="400" y="390" width="100" height="40" as="geometry"/>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-11" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RIx0az5tzrJqE075_1Bo-3">
+          <mxGeometry x="-0.3652" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
-        
-        <!-- 限额校验 -->
-        <mxCell id="limit" value="是否低于累计限额" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
-          <mxGeometry x="220" y="510" width="120" height="60" as="geometry"/>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="freeze" target="RIx0az5tzrJqE075_1Bo-4">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="limit_no" value="拒绝转账" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
-          <mxGeometry x="400" y="480" width="100" height="40" as="geometry"/>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-30" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RIx0az5tzrJqE075_1Bo-8">
+          <mxGeometry x="-0.6989" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
-        
-        <!-- 通过 -->
-        <mxCell id="pass" value="转账通过" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
-          <mxGeometry x="220" y="600" width="100" height="40" as="geometry"/>
+        <mxCell id="freeze" value="是否司法冻结" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;" parent="1" vertex="1">
+          <mxGeometry x="212" y="109" width="120" height="60" as="geometry" />
         </mxCell>
-        
-        <!-- 结束 -->
-        <mxCell id="end" value="结束" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;" vertex="1" parent="1">
-          <mxGeometry x="80" y="700" width="80" height="40" as="geometry"/>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="did" target="RIx0az5tzrJqE075_1Bo-4">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        
-        <!-- 连线 -->
-        <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="start" target="blacklist"/>
-        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="blacklist" target="blacklist_no"/>
-        <mxCell id="edge3" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="blacklist" target="freeze"/>
-        <mxCell id="edge4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="freeze" target="freeze_no"/>
-        <mxCell id="edge5" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="freeze" target="did"/>
-        <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="did" target="did_no"/>
-        <mxCell id="edge7" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="did" target="whitelist"/>
-        <mxCell id="edge8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="whitelist" target="whitelist_no"/>
-        <mxCell id="edge9" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="whitelist" target="request"/>
-        <mxCell id="edge10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="request" target="request_no"/>
-        <mxCell id="edge11" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="request" target="limit"/>
-        <mxCell id="edge12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="limit" target="limit_no"/>
-        <mxCell id="edge13" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="limit" target="pass"/>
-        <mxCell id="edge14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pass" target="end"/>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-29" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RIx0az5tzrJqE075_1Bo-9">
+          <mxGeometry x="-0.6213" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="did" target="whitelist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-35" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RIx0az5tzrJqE075_1Bo-12">
+          <mxGeometry x="0.3791" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="did" value="接收人是否注册DID" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" parent="1" vertex="1">
+          <mxGeometry x="212" y="213" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="pass">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="371.5" y="338.0000000000291" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="whitelist" target="request">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="whitelist" value="接收人是否白名单地址" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" parent="1" vertex="1">
+          <mxGeometry x="291.5" y="282" width="160" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="request" target="limit">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="456.97058823530097" y="431.88468663832464" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-26" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RIx0az5tzrJqE075_1Bo-22">
+          <mxGeometry x="0.2311" y="-3" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="request" target="pass">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="472" y="524" />
+              <mxPoint x="372" y="524" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="request" value="是否审核通过的交易请求" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" parent="1" vertex="1">
+          <mxGeometry x="396" y="351" width="151" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="limit" target="RIx0az5tzrJqE075_1Bo-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-28" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RIx0az5tzrJqE075_1Bo-27">
+          <mxGeometry x="-0.1469" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="limit" target="pass">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370.71875" y="558.65869140625" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="568" y="524" />
+              <mxPoint x="372" y="524" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-45" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RIx0az5tzrJqE075_1Bo-44">
+          <mxGeometry x="0.8141" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="limit" value="是否低于累计限额" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" parent="1" vertex="1">
+          <mxGeometry x="503" y="449" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RIx0az5tzrJqE075_1Bo-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pass" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pass" value="转账通过" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" parent="1" vertex="1">
+          <mxGeometry x="321.5" y="562" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="end" value="结束" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;" parent="1" vertex="1">
+          <mxGeometry x="331.5" y="631" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="start" target="blacklist" edge="1" />
+        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="blacklist" target="blacklist_no" edge="1" />
+        <mxCell id="edge3" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="blacklist" target="freeze" edge="1" />
+        <mxCell id="edge4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="freeze" target="freeze_no" edge="1" />
+        <mxCell id="edge5" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="freeze" target="did" edge="1" />
+        <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="did" target="did_no" edge="1" />
+        <mxCell id="edge7" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="did" target="whitelist" edge="1" />
+        <mxCell id="edge8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="whitelist" target="whitelist_no" edge="1" />
+        <mxCell id="edge9" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="whitelist" target="request" edge="1" />
+        <mxCell id="edge10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="request" target="request_no" edge="1" />
+        <mxCell id="edge11" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="request" target="limit" edge="1" />
+        <mxCell id="edge12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="limit" target="limit_no" edge="1" />
+        <mxCell id="edge13" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="limit" target="pass" edge="1" />
+        <mxCell id="edge14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="pass" target="end" edge="1" />
+        <mxCell id="RIx0az5tzrJqE075_1Bo-4" value="拒绝转账" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="603" y="562" width="100" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
