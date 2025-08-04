@@ -4,19 +4,19 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="A" value="机构在SCMS申请铸造ID" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" parent="1" vertex="1">
+        <mxCell id="A" value="机构在SCMS申请铸造ID" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;flipH=0;" parent="1" vertex="1">
           <mxGeometry x="66" y="-34" width="160" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="B" value="机构向银行转账法币到结算账号&lt;div&gt;（备注铸造ID）&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;" parent="1" vertex="1">
-          <mxGeometry x="260" y="-34" width="200" height="50" as="geometry" />
+        <mxCell id="B" value="机构向银行转账法币到结算账号&lt;div&gt;（备注铸造ID）&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;flipH=0;" parent="1" vertex="1">
+          <mxGeometry x="315" y="-34" width="200" height="50" as="geometry" />
         </mxCell>
         <mxCell id="C1" value="银行存证法币转账记录上链" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;dashed=1;dashPattern=8 8;" parent="1" vertex="1">
           <mxGeometry x="763" y="315" width="180" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="C" value="机构发起mintRequest" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" parent="1" vertex="1">
-          <mxGeometry x="556" y="-34" width="180" height="50" as="geometry" />
+        <mxCell id="C" value="机构发起mintRequest" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;flipH=0;" parent="1" vertex="1">
+          <mxGeometry x="593" y="-34" width="180" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="E" value="链上产生requestMintEvent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" parent="1" vertex="1">
+        <mxCell id="E" value="链上产生requestMintEvent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;flipH=0;" parent="1" vertex="1">
           <mxGeometry x="862" y="-34" width="180" height="50" as="geometry" />
         </mxCell>
         <mxCell id="V3N9yQ6HWGTea3L539rp-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="F" target="H">
@@ -53,7 +53,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="J" value="金额是否允许自动通过？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;" parent="1" vertex="1">
-          <mxGeometry x="280.5" y="269" width="151.5" height="81" as="geometry" />
+          <mxGeometry x="280.5" y="266" width="151.5" height="81" as="geometry" />
         </mxCell>
         <mxCell id="V3N9yQ6HWGTea3L539rp-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.647;exitY=-0.019;exitDx=0;exitDy=0;dashed=1;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="K" target="C1">
           <mxGeometry relative="1" as="geometry">
