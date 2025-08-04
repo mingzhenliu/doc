@@ -134,10 +134,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="lqRtal-pTQRRfgfTgEZP-12" value="财务审批" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+        <mxCell id="lqRtal-pTQRRfgfTgEZP-12" value="财务主管审批" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="385" y="706" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="lqRtal-pTQRRfgfTgEZP-14" value="合规审批" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+        <mxCell id="lqRtal-pTQRRfgfTgEZP-14" value="合规主管审批" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="513" y="706" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="lqRtal-pTQRRfgfTgEZP-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lqRtal-pTQRRfgfTgEZP-15" target="S4tFXiExohbChBpdp41I-41" edge="1">
@@ -156,7 +156,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lqRtal-pTQRRfgfTgEZP-15" value="风险审批" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+        <mxCell id="lqRtal-pTQRRfgfTgEZP-15" value="风险主管审批" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="257" y="706" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="lqRtal-pTQRRfgfTgEZP-19" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" parent="1" source="lqRtal-pTQRRfgfTgEZP-12" target="lqRtal-pTQRRfgfTgEZP-15" edge="1">
