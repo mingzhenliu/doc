@@ -20,22 +20,22 @@
           <mxGeometry x="-272" y="480" width="1092" height="99" as="geometry" />
         </mxCell>
         <mxCell id="6oCklSgaxmHuDCZmIr8I-202" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="-272" y="238" width="1084" height="135" as="geometry" />
+          <mxGeometry x="-272" y="269" width="1084" height="104" as="geometry" />
         </mxCell>
         <mxCell id="lqRtal-pTQRRfgfTgEZP-58" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;" parent="1" vertex="1">
-          <mxGeometry x="-208" y="632" width="188" height="94" as="geometry" />
+          <mxGeometry x="-9" y="760" width="188" height="94" as="geometry" />
         </mxCell>
         <mxCell id="lqRtal-pTQRRfgfTgEZP-39" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;" parent="1" vertex="1">
           <mxGeometry x="-77" y="380" width="894" height="88" as="geometry" />
         </mxCell>
         <mxCell id="200" value="留资（信息收集/意向登记）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;" parent="1" vertex="1">
-          <mxGeometry x="-203" y="276" width="180" height="50" as="geometry" />
+          <mxGeometry x="-203" y="296" width="180" height="50" as="geometry" />
         </mxCell>
         <mxCell id="201" value="初筛（初步筛选/资质审核）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;" parent="1" vertex="1">
-          <mxGeometry x="118" y="276" width="200" height="50" as="geometry" />
+          <mxGeometry x="118" y="296" width="200" height="50" as="geometry" />
         </mxCell>
         <mxCell id="202" value="加白名单（通过初筛后加入白名单）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" parent="1" vertex="1">
-          <mxGeometry x="438" y="276" width="240" height="50" as="geometry" />
+          <mxGeometry x="438" y="296" width="240" height="50" as="geometry" />
         </mxCell>
         <mxCell id="e200" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="200" target="201" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -74,10 +74,12 @@
         <mxCell id="6oCklSgaxmHuDCZmIr8I-219" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;dashed=1;dashPattern=1 2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="S4tFXiExohbChBpdp41I-40" target="S4tFXiExohbChBpdp41I-32">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="84" y="779" />
-              <mxPoint x="-138" y="779" />
+              <mxPoint x="-138" y="679" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="6oCklSgaxmHuDCZmIr8I-241" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="S4tFXiExohbChBpdp41I-40" target="S4tFXiExohbChBpdp41I-42">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="S4tFXiExohbChBpdp41I-40" value="分销商注册成功" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" parent="1" vertex="1">
           <mxGeometry x="-2" y="654" width="172" height="50" as="geometry" />
@@ -86,7 +88,7 @@
           <mxGeometry x="473" y="807" width="160" height="38" as="geometry" />
         </mxCell>
         <mxCell id="S4tFXiExohbChBpdp41I-42" value="持续监控与定期复审" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" parent="1" vertex="1">
-          <mxGeometry x="-178" y="654" width="128" height="50" as="geometry" />
+          <mxGeometry x="21" y="782" width="128" height="50" as="geometry" />
         </mxCell>
         <mxCell id="S4tFXiExohbChBpdp41I-45" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" parent="1" source="S4tFXiExohbChBpdp41I-29" target="S4tFXiExohbChBpdp41I-30" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -117,11 +119,6 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="473" y="685" as="sourcePoint" />
             <mxPoint x="665" y="566" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="S4tFXiExohbChBpdp41I-59" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" parent="1" source="S4tFXiExohbChBpdp41I-40" target="S4tFXiExohbChBpdp41I-42" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="88" y="681" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="lqRtal-pTQRRfgfTgEZP-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="lqRtal-pTQRRfgfTgEZP-12" target="S4tFXiExohbChBpdp41I-41" edge="1">
@@ -229,17 +226,17 @@
           <mxGeometry x="529" y="765" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6oCklSgaxmHuDCZmIr8I-207" value="分销商注册官网预审核" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="161" y="221" width="207" height="63" as="geometry" />
+          <mxGeometry x="161" y="250" width="207" height="63" as="geometry" />
         </mxCell>
-        <mxCell id="6oCklSgaxmHuDCZmIr8I-210" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;curved=0;" edge="1" parent="1" source="202" target="S4tFXiExohbChBpdp41I-29">
+        <mxCell id="6oCklSgaxmHuDCZmIr8I-210" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="202" target="S4tFXiExohbChBpdp41I-29">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="678" y="301" as="sourcePoint" />
             <mxPoint x="-207" y="579" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="698" y="301" />
-              <mxPoint x="698" y="362" />
-              <mxPoint x="-229" y="362" />
-              <mxPoint x="-229" y="553" />
+              <mxPoint x="766" y="321" />
+              <mxPoint x="766" y="362" />
+              <mxPoint x="-263" y="362" />
+              <mxPoint x="-263" y="535" />
             </Array>
           </mxGeometry>
         </mxCell>
