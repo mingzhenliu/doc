@@ -223,7 +223,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="V3N9yQ6HWGTea3L539rp-19" value="铸造" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
-          <mxGeometry x="620.5" y="438" width="175" height="40" as="geometry" />
+          <mxGeometry x="620.5" y="442" width="175" height="40" as="geometry" />
         </mxCell>
         <mxCell id="V3N9yQ6HWGTea3L539rp-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="V3N9yQ6HWGTea3L539rp-24" target="Q">
           <mxGeometry relative="1" as="geometry" />
