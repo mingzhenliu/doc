@@ -1,31 +1,31 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" version="28.0.7">
   <diagram name="mint流程补充版" id="0">
-    <mxGraphModel dx="1671" dy="1189" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2098" dy="1718" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="EkPfG0Mokbutytz6ZMXc-4" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+        <mxCell id="EkPfG0Mokbutytz6ZMXc-4" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry x="-1" y="40" width="1092" height="673" as="geometry" />
         </mxCell>
-        <mxCell id="EkPfG0Mokbutytz6ZMXc-5" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+        <mxCell id="EkPfG0Mokbutytz6ZMXc-5" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="354" y="240" width="290" height="218" as="geometry" />
         </mxCell>
-        <mxCell id="EkPfG0Mokbutytz6ZMXc-6" value="根据铸造金额&lt;div&gt;动态匹配审批流&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="EkPfG0Mokbutytz6ZMXc-6" value="根据铸造金额&lt;div&gt;动态匹配审批流&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="438" y="419" width="110" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EkPfG0Mokbutytz6ZMXc-3" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="EkPfG0Mokbutytz6ZMXc-3" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="-1" y="-77" width="1092" height="99" as="geometry" />
         </mxCell>
-        <mxCell id="A" value="机构在SCMS申请铸造ID" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;flipH=0;" parent="1" vertex="1">
+        <mxCell id="A" value="分销商在铸造服务申请铸造ID" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;flipH=0;" parent="1" vertex="1">
           <mxGeometry x="60" y="-34" width="160" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="B" value="机构向银行转账法币到结算账号&lt;div&gt;（备注铸造ID）&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;flipH=0;" parent="1" vertex="1">
+        <mxCell id="B" value="分销商向银行转账法币到结算账号&lt;div&gt;（备注铸造ID）&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;flipH=0;" parent="1" vertex="1">
           <mxGeometry x="315" y="-34" width="200" height="50" as="geometry" />
         </mxCell>
         <mxCell id="C1" value="银行存证法币转账记录上链" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;dashed=1;dashPattern=8 8;" parent="1" vertex="1">
           <mxGeometry x="780" y="281" width="180" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="C" value="机构发起mintRequest" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;flipH=0;" parent="1" vertex="1">
+        <mxCell id="C" value="分销商发起mintRequest" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;flipH=0;" parent="1" vertex="1">
           <mxGeometry x="593" y="-34" width="180" height="50" as="geometry" />
         </mxCell>
         <mxCell id="E" value="链上产生requestMintEvent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;flipH=0;" parent="1" vertex="1">
