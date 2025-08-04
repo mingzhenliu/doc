@@ -178,6 +178,33 @@
             <mxPoint x="1" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="lqRtal-pTQRRfgfTgEZP-23" value="个人身份验证&#xa;(董事、UBO等)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="663" y="186" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lqRtal-pTQRRfgfTgEZP-24" value="制裁名单/PEP筛查" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="493" y="186" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lqRtal-pTQRRfgfTgEZP-25" value="企业注册信息验证" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="323" y="186" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lqRtal-pTQRRfgfTgEZP-26" value="股权结构透明化" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="163" y="186" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lqRtal-pTQRRfgfTgEZP-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#b85450;dashed=1;" edge="1" parent="1" source="lqRtal-pTQRRfgfTgEZP-23" target="lqRtal-pTQRRfgfTgEZP-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lqRtal-pTQRRfgfTgEZP-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#9673a6;dashed=1;" edge="1" parent="1" source="lqRtal-pTQRRfgfTgEZP-24" target="lqRtal-pTQRRfgfTgEZP-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lqRtal-pTQRRfgfTgEZP-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#b85450;dashed=1;" edge="1" parent="1" source="lqRtal-pTQRRfgfTgEZP-25" target="lqRtal-pTQRRfgfTgEZP-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lqRtal-pTQRRfgfTgEZP-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#9673a6;dashed=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="S4tFXiExohbChBpdp41I-33" target="lqRtal-pTQRRfgfTgEZP-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="878" y="301" as="sourcePoint" />
+            <mxPoint x="878" y="361" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
