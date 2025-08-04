@@ -1,102 +1,193 @@
 <mxfile host="app.diagrams.net">
-  <diagram name="稳定币Minter注册与合规流程-优化版">
-    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="900" math="0" shadow="0">
+  <diagram name="稳定币Minter注册流程-优化版">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
-        <!-- 主流程 -->
-        <mxCell id="n1" value="机构客户发起注册申请" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
-          <mxGeometry x="60" y="200" width="180" height="50" as="geometry"/>
+        
+        <!-- 第一层：申请与资料提交 -->
+        <mxCell id="start" value="机构客户发起注册申请" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="140" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="n2" value="线上提交资料（公司、银行、链上账户）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;" vertex="1" parent="1">
-          <mxGeometry x="260" y="200" width="240" height="50" as="geometry"/>
+        
+        <mxCell id="submit" value="线上提交资料&#xa;(公司、银行、链上账户)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="280" y="200" width="160" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="n3" value="KYC/KYB合规校验" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
-          <mxGeometry x="540" y="200" width="180" height="50" as="geometry"/>
+        
+        <!-- 第二层：并行验证 -->
+        <mxCell id="bankVerify" value="银行账户打款验证" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="500" y="120" width="140" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="n4" value="风险等级判断" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
-          <mxGeometry x="760" y="195" width="100" height="60" as="geometry"/>
+        
+        <mxCell id="ethVerify" value="区块链账户签名验证&#xa;(minterOwner、mintReceiver、&#xa;burnReceiver)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="500" y="200" width="180" height="70" as="geometry"/>
         </mxCell>
-        <mxCell id="n5" value="自动审批通过" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;" vertex="1" parent="1">
-          <mxGeometry x="900" y="160" width="160" height="50" as="geometry"/>
+        
+        <mxCell id="kyckyb" value="KYC/KYB合规校验" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="300" width="140" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="n6" value="线下补充核查" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;" vertex="1" parent="1">
-          <mxGeometry x="900" y="240" width="160" height="50" as="geometry"/>
+        
+        <!-- 第三层：风险评估 -->
+        <mxCell id="riskAssess" value="风险等级判断" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="210" width="120" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="n7" value="原件核查/实地尽调/视频见证" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;" vertex="1" parent="1">
-          <mxGeometry x="1100" y="240" width="200" height="50" as="geometry"/>
+        
+        <!-- 第四层：审批分支 -->
+        <mxCell id="autoApprove" value="自动审批通过" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="920" y="140" width="130" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="n8" value="增强尽调与人工复核" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
-          <mxGeometry x="1320" y="240" width="180" height="50" as="geometry"/>
+        
+        <mxCell id="manualReview" value="线下补充核查" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="920" y="250" width="130" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="n9" value="合规审核结果" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
-          <mxGeometry x="1540" y="240" width="100" height="60" as="geometry"/>
+        
+        <mxCell id="enhancedDD" value="原件核查/实地尽调/&#xa;视频面谈" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="920" y="320" width="150" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="n10" value="链上部署合约并分配权限（minterOwner多签/MPC）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
-          <mxGeometry x="1680" y="200" width="260" height="50" as="geometry"/>
+        
+        <!-- 第五层：最终审核 -->
+        <mxCell id="finalReview" value="合规审核结果" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="260" width="120" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="n11" value="拒绝注册" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
-          <mxGeometry x="1680" y="280" width="160" height="50" as="geometry"/>
+        
+        <!-- 第六层：结果处理 -->
+        <mxCell id="deployContract" value="链上部署合约并分配权限&#xa;(minterOwner多签/MPC)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="180" width="200" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="n12" value="持续监控与定期复审" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
-          <mxGeometry x="1980" y="200" width="180" height="50" as="geometry"/>
+        
+        <mxCell id="reject" value="拒绝注册" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="320" width="120" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="n13" value="异常交易报警与应急处理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;" vertex="1" parent="1">
-          <mxGeometry x="2200" y="200" width="200" height="50" as="geometry"/>
+        
+        <!-- 第七层：业务运营 -->
+        <mxCell id="monitoring" value="持续监控与定期复审" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1580" y="150" width="150" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="n14" value="业务正式开展（mint/赎回等）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
-          <mxGeometry x="2420" y="200" width="200" height="50" as="geometry"/>
+        
+        <mxCell id="alerting" value="异常交易报警与&#xa;应急处理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1580" y="220" width="130" height="60" as="geometry"/>
         </mxCell>
-        <!-- KYC细化分支 -->
-        <mxCell id="k1" value="上传个人资料（身份证明、住址证明等）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;" vertex="1" parent="n3">
-          <mxGeometry x="-200" y="70" width="220" height="40" as="geometry"/>
+        
+        <mxCell id="business" value="业务正式开展&#xa;(mint/赎回等)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1800" y="180" width="140" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="k2" value="制裁名单/PEP筛查" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="n3">
-          <mxGeometry x="-200" y="120" width="180" height="40" as="geometry"/>
+        
+        <!-- KYC/KYB详细流程 (子流程) -->
+        <mxCell id="kycDetail1" value="个人身份验证&#xa;(董事、UBO等)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="400" y="420" width="120" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="k3" value="活体检测/视频见证（高风险）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;" vertex="1" parent="n3">
-          <mxGeometry x="-200" y="170" width="200" height="40" as="geometry"/>
+        
+        <mxCell id="kycDetail2" value="制裁名单/PEP筛查" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="540" y="420" width="110" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="k4" value="AML风险评分" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="n3">
-          <mxGeometry x="-200" y="220" width="140" height="40" as="geometry"/>
+        
+        <mxCell id="kybDetail1" value="企业注册信息验证" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="670" y="420" width="120" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="k5" value="电子签名合规声明" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="n3">
-          <mxGeometry x="-200" y="270" width="160" height="40" as="geometry"/>
+        
+        <mxCell id="kybDetail2" value="股权结构透明化" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="810" y="420" width="110" height="50" as="geometry"/>
         </mxCell>
-        <!-- KYB细化分支 -->
-        <mxCell id="b1" value="上传企业资料（注册证书、章程、UBO等）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;" vertex="1" parent="n3">
-          <mxGeometry x="200" y="70" width="240" height="40" as="geometry"/>
-        </mxCell>
-        <mxCell id="b2" value="股权结构透明化校验" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="n3">
-          <mxGeometry x="200" y="120" width="180" height="40" as="geometry"/>
-        </mxCell>
-        <mxCell id="b3" value="业务真实性核查（合同、流水等）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;" vertex="1" parent="n3">
-          <mxGeometry x="200" y="170" width="200" height="40" as="geometry"/>
-        </mxCell>
-        <mxCell id="b4" value="实地尽调/原件核查（高风险）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;" vertex="1" parent="n3">
-          <mxGeometry x="200" y="220" width="200" height="40" as="geometry"/>
-        </mxCell>
-        <mxCell id="b5" value="企业AML风险评分" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="n3">
-          <mxGeometry x="200" y="270" width="140" height="40" as="geometry"/>
-        </mxCell>
-        <mxCell id="b6" value="定期复审与信息更新" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="n3">
-          <mxGeometry x="200" y="320" width="160" height="40" as="geometry"/>
-        </mxCell>
+        
         <!-- 连线 -->
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n1" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n2" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n3" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e4" value="低风险" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n4" target="n5"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e5" value="高风险/疑点" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n4" target="n6"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n6" target="n7"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n7" target="n8"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n8" target="n9"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e9" value="通过" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n9" target="n10"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e10" value="不通过" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n9" target="n11"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n5" target="n10"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n10" target="n12"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e13" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n12" target="n13"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e14" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" parent="1" source="n10" target="n14"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="start" target="submit">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="e2a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="submit" target="bankVerify">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="e2b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="submit" target="ethVerify">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="e2c" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="submit" target="kyckyb">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="e3a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="bankVerify" target="riskAssess">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="e3b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="ethVerify" target="riskAssess">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="e3c" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="kyckyb" target="riskAssess">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="e4a" value="低风险" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontColor=#008000;" edge="1" parent="1" source="riskAssess" target="autoApprove">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="e4b" value="中风险" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontColor=#ff8000;" edge="1" parent="1" source="riskAssess" target="manualReview">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="e4c" value="高风险" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontColor=#ff0000;" edge="1" parent="1" source="riskAssess" target="enhancedDD">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="e5a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="autoApprove" target="deployContract">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="e5b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="manualReview" target="finalReview">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="e5c" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="enhancedDD" target="finalReview">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="e6a" value="通过" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontColor=#008000;" edge="1" parent="1" source="finalReview" target="deployContract">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="e6b" value="不通过" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontColor=#ff0000;" edge="1" parent="1" source="finalReview" target="reject">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="e7a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="deployContract" target="monitoring">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="e7b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="deployContract" target="alerting">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="deployContract" target="business">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- KYC/KYB 详细连线 -->
+        <mxCell id="ek1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#9673a6;dashed=1;" edge="1" parent="1" source="kyckyb" target="kycDetail1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="ek2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#b85450;dashed=1;" edge="1" parent="1" source="kycDetail1" target="kycDetail2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="ek3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#9673a6;dashed=1;" edge="1" parent="1" source="kycDetail2" target="kybDetail1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="ek4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#b85450;dashed=1;" edge="1" parent="1" source="kybDetail1" target="kybDetail2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- 标题和说明 -->
+        <mxCell id="title" value="稳定币Minter注册与合规流程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="40" width="300" height="30" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="subtitle" value="符合香港稳定币法案要求" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="750" y="70" width="200" height="20" as="geometry"/>
+        </mxCell>
+        
       </root>
     </mxGraphModel>
   </diagram>
