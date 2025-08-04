@@ -7,6 +7,12 @@
         <mxCell id="EkPfG0Mokbutytz6ZMXc-4" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="-1" y="40" width="1092" height="673" as="geometry" />
         </mxCell>
+        <mxCell id="EkPfG0Mokbutytz6ZMXc-5" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="240" width="290" height="218" as="geometry" />
+        </mxCell>
+        <mxCell id="EkPfG0Mokbutytz6ZMXc-6" value="根据铸造金额&lt;div&gt;动态匹配审批流&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="438" y="419" width="110" height="30" as="geometry" />
+        </mxCell>
         <mxCell id="EkPfG0Mokbutytz6ZMXc-3" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="-1" y="-77" width="1092" height="99" as="geometry" />
         </mxCell>
