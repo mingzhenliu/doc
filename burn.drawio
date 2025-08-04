@@ -26,7 +26,7 @@
           <mxGeometry x="599" y="-42" width="146" height="50" as="geometry" />
         </mxCell>
         <mxCell id="E" value="链上产生requestBrunEvent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;flipH=1;" parent="1" vertex="1">
-          <mxGeometry x="859" y="-42" width="180" height="50" as="geometry" />
+          <mxGeometry x="901.0000000000005" y="-42" width="180" height="50" as="geometry" />
         </mxCell>
         <mxCell id="F" value="稳定版运营系统&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;生成赎回订单&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" parent="1" vertex="1">
           <mxGeometry x="37" y="66" width="160" height="50" as="geometry" />
@@ -35,7 +35,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Z2" value="拒绝赎回" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" parent="1" vertex="1">
-          <mxGeometry x="929.5" y="71" width="169" height="40" as="geometry" />
+          <mxGeometry x="906.5000000000005" y="71" width="169" height="40" as="geometry" />
         </mxCell>
         <mxCell id="zMjqmTBHtS1OJDe74mQP-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="K" target="zMjqmTBHtS1OJDe74mQP-21">
           <mxGeometry relative="1" as="geometry" />
@@ -44,21 +44,19 @@
           <mxGeometry x="665" y="270" width="175" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Q" value="流程结束" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="964.0000000000005" y="556" width="100" height="40" as="geometry" />
+          <mxGeometry x="941.0000000000005" y="556" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="C" target="E" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1">
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1039" y="-17" as="sourcePoint" />
-            <mxPoint x="37.00000000000023" y="91" as="targetPoint" />
+            <mxPoint x="991.0769230769229" y="13" as="sourcePoint" />
+            <mxPoint x="37.00000000000023" y="96" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1039" y="-9" />
-              <mxPoint x="1072" y="-9" />
-              <mxPoint x="1072" y="30" />
-              <mxPoint x="10" y="30" />
-              <mxPoint x="10" y="91" />
+              <mxPoint x="991" y="35" />
+              <mxPoint x="10" y="35" />
+              <mxPoint x="10" y="96" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -131,8 +129,10 @@
         <mxCell id="V3N9yQ6HWGTea3L539rp-19" value="结算账户赎回费用扣除" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" parent="1" vertex="1">
           <mxGeometry x="665" y="497" width="175" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="V3N9yQ6HWGTea3L539rp-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="V3N9yQ6HWGTea3L539rp-24" target="Q" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="V3N9yQ6HWGTea3L539rp-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="Q" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="817" y="576" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="V3N9yQ6HWGTea3L539rp-24" value="结算账户&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;转法币给分销商账户&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" parent="1" vertex="1">
           <mxGeometry x="665" y="556" width="175" height="40" as="geometry" />
@@ -149,9 +149,10 @@
         <mxCell id="zMjqmTBHtS1OJDe74mQP-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zMjqmTBHtS1OJDe74mQP-19" target="V3N9yQ6HWGTea3L539rp-19">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="zMjqmTBHtS1OJDe74mQP-29" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;curved=0;" edge="1" parent="1" source="zMjqmTBHtS1OJDe74mQP-19">
+        <mxCell id="zMjqmTBHtS1OJDe74mQP-29" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;curved=0;" edge="1" parent="1" target="zMjqmTBHtS1OJDe74mQP-25">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="952" y="389" as="targetPoint" />
+            <mxPoint x="817" y="457.0769230769231" as="sourcePoint" />
+            <mxPoint x="929" y="389" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="zMjqmTBHtS1OJDe74mQP-31" value="订单验证" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zMjqmTBHtS1OJDe74mQP-29">
@@ -162,19 +163,19 @@
         <mxCell id="zMjqmTBHtS1OJDe74mQP-19" value="储备账户转账到结算账户" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
           <mxGeometry x="665" y="437" width="175" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="zMjqmTBHtS1OJDe74mQP-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="zMjqmTBHtS1OJDe74mQP-19">
+        <mxCell id="zMjqmTBHtS1OJDe74mQP-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="zMjqmTBHtS1OJDe74mQP-25">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="752.5" y="389" as="sourcePoint" />
+            <mxPoint x="817" y="357.9999999999998" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="zMjqmTBHtS1OJDe74mQP-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zMjqmTBHtS1OJDe74mQP-21" target="zMjqmTBHtS1OJDe74mQP-25">
+        <mxCell id="zMjqmTBHtS1OJDe74mQP-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zMjqmTBHtS1OJDe74mQP-21" target="zMjqmTBHtS1OJDe74mQP-19">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="zMjqmTBHtS1OJDe74mQP-21" value="稳定币合约burn稳定币" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
           <mxGeometry x="665" y="338" width="175" height="40" as="geometry" />
         </mxCell>
         <mxCell id="zMjqmTBHtS1OJDe74mQP-25" value="修改链上订单状态" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="877" y="338" width="115" height="40" as="geometry" />
+          <mxGeometry x="854" y="338" width="115" height="40" as="geometry" />
         </mxCell>
         <mxCell id="zMjqmTBHtS1OJDe74mQP-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="F" target="zMjqmTBHtS1OJDe74mQP-32">
           <mxGeometry relative="1" as="geometry">
@@ -191,12 +192,12 @@
         </mxCell>
         <mxCell id="zMjqmTBHtS1OJDe74mQP-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Z2" target="zMjqmTBHtS1OJDe74mQP-40">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1014" y="111" as="sourcePoint" />
-            <mxPoint x="1014" y="556" as="targetPoint" />
+            <mxPoint x="991" y="111" as="sourcePoint" />
+            <mxPoint x="991" y="556" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="zMjqmTBHtS1OJDe74mQP-40" value="稳定币退回" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
-          <mxGeometry x="929.5" y="212" width="169" height="40" as="geometry" />
+          <mxGeometry x="906.5000000000005" y="212" width="169" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
