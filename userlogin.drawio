@@ -1,9 +1,76 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" version="28.0.7">
-  <diagram name="Page-1" id="szH5kkTlrYOsBNJ6io0a">
-    <mxGraphModel>
+<mxfile host="app.diagrams.net" agent="AI" version="27.1.4">
+  <diagram id="register-login-flow" name="注册与登录流程">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <!-- 注册流程 -->
+        <mxCell id="reg-1" value="用户注册/输入手机号或邮箱/验证码验证" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="40" width="180" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="reg-2" value="KYC流程/上传身份证明/自拍照/eKYC自动审核" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="180" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="reg-3" value="KYC审核通过？" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="200" width="100" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="reg-4" value="审核未通过/提示补充材料或联系客服" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCCCC;" vertex="1" parent="1">
+          <mxGeometry x="20" y="280" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="reg-5" value="审核通过/绑定链上身份（DID）/DID绑定KYC信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="280" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="reg-6" value="验证私钥" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="360" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="reg-7" value="私钥保管方式？" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="420" width="100" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="reg-8" value="用户自保管（推荐Passkey/Safe）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="500" width="180" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="reg-9" value="平台托管（对接VASP牌照托管平台）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="500" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="reg-10" value="注册完成" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCFFCC;" vertex="1" parent="1">
+          <mxGeometry x="260" y="600" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <!-- 注册流程连线 -->
+        <mxCell id="reg-e1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="reg-1" target="reg-2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="reg-e2" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="reg-2" target="reg-3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="reg-e3" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="reg-3" target="reg-4"><mxGeometry relative="1" as="geometry"><mxPoint x="120" y="260" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="reg-e4" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="reg-3" target="reg-5"><mxGeometry relative="1" as="geometry"><mxPoint x="320" y="260" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="reg-e5" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="reg-5" target="reg-6"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="reg-e6" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="reg-6" target="reg-7"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="reg-e7" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="reg-7" target="reg-8"><mxGeometry relative="1" as="geometry"><mxPoint x="170" y="480" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="reg-e8" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="reg-7" target="reg-9"><mxGeometry relative="1" as="geometry"><mxPoint x="370" y="480" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="reg-e9" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="reg-8" target="reg-10"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="reg-e10" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="reg-9" target="reg-10"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <!-- 登录流程 -->
+        <mxCell id="login-1" value="用户登录/输入手机号或邮箱/验证码验证" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="40" width="180" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="login-2" value="多因子认证（短信/邮箱验证码+钱包签名）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="120" width="220" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="login-3" value="登录成功" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCFFCC;" vertex="1" parent="1">
+          <mxGeometry x="600" y="200" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="login-4" value="用户发起赎回/跨链" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="260" width="180" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="login-5" value="再次验证私钥" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="340" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="login-6" value="操作完成" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCFFCC;" vertex="1" parent="1">
+          <mxGeometry x="600" y="400" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <!-- 登录流程连线 -->
+        <mxCell id="login-e1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="login-1" target="login-2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="login-e2" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="login-2" target="login-3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="login-e3" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="login-3" target="login-4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="login-e4" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="login-4" target="login-5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="login-e5" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="login-5" target="login-6"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
   </diagram>
