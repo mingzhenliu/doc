@@ -87,8 +87,8 @@
         </mxCell>
         <mxCell id="7-ebNql1WhgYNk7k039p-32" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;dashed=1;dashPattern=8 8;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="274" y="378" as="sourcePoint" />
-            <mxPoint x="399" y="378" as="targetPoint" />
+            <mxPoint x="254" y="379" as="sourcePoint" />
+            <mxPoint x="379" y="379" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="7-ebNql1WhgYNk7k039p-33" value="用户登录/输入手机号或邮箱/验证码验证" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -119,7 +119,7 @@
           <mxGeometry x="-34" y="-37" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="7-ebNql1WhgYNk7k039p-45" value="调外部KYC" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="179" y="126" width="98" height="30" as="geometry" />
+          <mxGeometry x="178" y="126" width="98" height="30" as="geometry" />
         </mxCell>
         <mxCell id="7-ebNql1WhgYNk7k039p-46" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="reg-2" target="7-ebNql1WhgYNk7k039p-45">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -134,7 +134,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="7-ebNql1WhgYNk7k039p-48" value="调DID" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="337" y="281" width="98" height="30" as="geometry" />
+          <mxGeometry x="314" y="281" width="98" height="30" as="geometry" />
         </mxCell>
         <mxCell id="7-ebNql1WhgYNk7k039p-49" value="后台将KYC信息保存以备后续监管报送等" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="328" y="552" width="144" height="30" as="geometry" />
