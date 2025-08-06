@@ -95,7 +95,7 @@
           <mxGeometry x="429" y="31" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="7-ebNql1WhgYNk7k039p-34" value="多因子认证（短信/邮箱验证码+钱包签名）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="398" y="131" width="242" height="60" as="geometry" />
+          <mxGeometry x="431" y="131" width="177" height="60" as="geometry" />
         </mxCell>
         <mxCell id="7-ebNql1WhgYNk7k039p-35" value="登录成功" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCFFCC;" vertex="1" parent="1">
           <mxGeometry x="459" y="231" width="120" height="40" as="geometry" />
