@@ -10,26 +10,8 @@
         <mxCell id="bankGroup" value="银行核心系统" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1f5fe;strokeColor=#01579b;fontFamily=Arial;fontSize=14;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="258.5" y="103" width="260.5" height="164" as="geometry" />
         </mxCell>
-        <mxCell id="fxTrade" value="外汇交易系统&lt;br&gt;FX Trading System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b3e5fc;strokeColor=#0277bd;fontFamily=Arial;" parent="bankGroup" vertex="1">
-          <mxGeometry x="4" y="93" width="104" height="46" as="geometry" />
-        </mxCell>
-        <mxCell id="wallet" value="数字钱包&lt;br&gt;Digital Wallet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b3e5fc;strokeColor=#0277bd;fontFamily=Arial;" parent="bankGroup" vertex="1">
-          <mxGeometry x="4" y="28" width="246" height="42" as="geometry" />
-        </mxCell>
-        <mxCell id="yZ5JDlVtQkjx1PtRjN0Z-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="bankGroup" source="fxTrade" target="wallet" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="207" y="-67" as="sourcePoint" />
-            <mxPoint x="257" y="-117" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="bankCore" value="银行核心系统&lt;br&gt;Core Banking System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b3e5fc;strokeColor=#0277bd;fontFamily=Arial;" parent="bankGroup" vertex="1">
-          <mxGeometry x="133" y="93" width="120" height="45" as="geometry" />
-        </mxCell>
-        <mxCell id="edge1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="bankGroup" source="bankCore" target="fxTrade" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="yZ5JDlVtQkjx1PtRjN0Z-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="bankGroup" source="fxTrade" target="bankCore" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry x="70.25" y="72" width="120" height="45" as="geometry" />
         </mxCell>
         <mxCell id="wtsGroup" value="WTS基础设施" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#4a148c;fontFamily=Arial;fontSize=14;fontStyle=1;startSize=23;" parent="1" vertex="1">
           <mxGeometry x="54" y="103" width="202" height="163" as="geometry" />
@@ -40,23 +22,17 @@
         <mxCell id="tdGroup" value="TD" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e8f5e8;strokeColor=#2e7d32;fontFamily=Arial;fontSize=14;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="60" y="-59" width="459" height="156" as="geometry" />
         </mxCell>
-        <mxCell id="F9FrPvco1_UeTbacNDWa-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="tdGroup" source="tdMint" target="keyMgmt">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="tdMint" value="TD铸造模块&lt;br&gt;TD Mint Module" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontFamily=Arial;" parent="tdGroup" vertex="1">
-          <mxGeometry x="345" y="92" width="100" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="tdBurn" value="TD销毁模块&lt;br&gt;TD Burn Module" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontFamily=Arial;" parent="tdGroup" vertex="1">
-          <mxGeometry x="14" y="92" width="104" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="F9FrPvco1_UeTbacNDWa-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="tdGroup" source="tdRegistry" target="tdMint">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="tdRegistry" value="TD注册表&lt;br&gt;TD Registry" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontFamily=Arial;" parent="tdGroup" vertex="1">
-          <mxGeometry x="179.5" y="30" width="100" height="50" as="geometry" />
+        <mxCell id="tdBurn" value="TD模块&lt;br&gt;TD Module" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontFamily=Arial;" parent="tdGroup" vertex="1">
+          <mxGeometry x="174.5" y="31" width="104" height="50" as="geometry" />
         </mxCell>
         <mxCell id="keyMgmt" value="私钥管理&lt;br&gt;Private Key Management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Arial;" parent="tdGroup" vertex="1">
-          <mxGeometry x="154" y="92" width="152.5" height="49" as="geometry" />
+          <mxGeometry x="150.25" y="100" width="152.5" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="F9FrPvco1_UeTbacNDWa-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="tdGroup" source="tdBurn" target="keyMgmt">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="38" y="127" as="sourcePoint" />
+            <mxPoint x="88" y="77" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="edge7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="smartContract" target="node2" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -65,13 +41,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="blockchainGroup" value="区块链网络" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e8eaf6;strokeColor=#3f51b5;fontFamily=Arial;" parent="1" vertex="1">
-          <mxGeometry x="72" y="185" width="180" height="75" as="geometry" />
+          <mxGeometry x="72" y="183" width="180" height="75" as="geometry" />
         </mxCell>
         <mxCell id="node1" value="节点1&lt;br&gt;Node 1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c5cae9;strokeColor=#303f9f;fontFamily=Arial;" parent="blockchainGroup" vertex="1">
           <mxGeometry x="10" y="30" width="50" height="40" as="geometry" />
         </mxCell>
         <mxCell id="node2" value="节点2&lt;br&gt;Node 2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c5cae9;strokeColor=#303f9f;fontFamily=Arial;" parent="blockchainGroup" vertex="1">
-          <mxGeometry x="70" y="30" width="50" height="40" as="geometry" />
+          <mxGeometry x="64" y="30" width="50" height="40" as="geometry" />
         </mxCell>
         <mxCell id="node3" value="节点3&lt;br&gt;Node 3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c5cae9;strokeColor=#303f9f;fontFamily=Arial;" parent="blockchainGroup" vertex="1">
           <mxGeometry x="120" y="30" width="50" height="40" as="geometry" />
@@ -82,40 +58,29 @@
         <mxCell id="F9FrPvco1_UeTbacNDWa-19" value="Ensemble Pilot 网络" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontFamily=Arial;" vertex="1" parent="F9FrPvco1_UeTbacNDWa-16">
           <mxGeometry x="33" y="44" width="104" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="F9FrPvco1_UeTbacNDWa-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="F9FrPvco1_UeTbacNDWa-19" target="tdRegistry">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="361" y="8" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="F9FrPvco1_UeTbacNDWa-24" value="&lt;span style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;HKICL 网络&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Arial;fontSize=14;fontStyle=1;" vertex="1" parent="1">
           <mxGeometry x="529" y="100" width="170" height="163" as="geometry" />
         </mxCell>
         <mxCell id="F9FrPvco1_UeTbacNDWa-29" value="RTGS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontFamily=Arial;" vertex="1" parent="F9FrPvco1_UeTbacNDWa-24">
-          <mxGeometry x="52" y="94" width="104" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="F9FrPvco1_UeTbacNDWa-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tdMint" target="smartContract">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="455" y="93" />
-              <mxPoint x="164" y="93" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="F9FrPvco1_UeTbacNDWa-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tdBurn" target="smartContract">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="126" y="93" />
-              <mxPoint x="164" y="93" />
-            </Array>
-          </mxGeometry>
+          <mxGeometry x="49" y="72.5" width="104" height="50" as="geometry" />
         </mxCell>
         <mxCell id="F9FrPvco1_UeTbacNDWa-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="F9FrPvco1_UeTbacNDWa-29" target="bankCore">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="F9FrPvco1_UeTbacNDWa-31" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wallet" target="tdBurn">
+        <mxCell id="F9FrPvco1_UeTbacNDWa-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tdBurn" target="smartContract">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="164" y="2" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F9FrPvco1_UeTbacNDWa-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bankCore" target="tdBurn">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F9FrPvco1_UeTbacNDWa-36" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="F9FrPvco1_UeTbacNDWa-19" target="tdBurn">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="183" y="145" as="sourcePoint" />
-            <mxPoint x="233" y="95" as="targetPoint" />
+            <mxPoint x="475" y="-98" as="sourcePoint" />
+            <mxPoint x="525" y="-148" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
