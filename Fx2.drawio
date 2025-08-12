@@ -1,39 +1,187 @@
-@startuml
-!theme plain
-
-participant "Bank A" as BA
-participant "Escrow Contract" as EC  
-participant "TD Token (ERC20)" as TD
-participant "Ensemble IL" as EIL
-participant "CeBM Network" as CM
-participant "Bank B" as BB
-
-== Stage 1: Initiation ==
-BA -> EIL: 1. Payment instruction (100 TD)
-EIL -> BB: 2. Notify transfer request
-
-== Stage 2a: TD Escrow ==
-BA -> EC: 3. initiateTransfer(BankB, 100)
-EC -> TD: 4. transferFrom(BankA, Escrow, 100)
-TD --> EC: 5. Transfer successful
-EC --> BA: 6. TD escrow confirmed
-BA -> EIL: 7. Notify TD escrow complete
-
-== Stage 2b: RTGS Escrow ==
-EIL -> BA: 10. Request RTGS transfer
-BA -> CM: 11. Transfer 100 RTGS to Escrow
-CM --> BA: 12. RTGS confirmed
-CM -> EIL: 13. Validate RTGS received
-
-== Stage 4: Completion ==
-CM -> BB: 15. Release 100 RTGS to Bank B
-CM -> EIL: 17. Notify RTGS complete
-EIL -> EC: 18. confirmRTGS(transferId)
-EC -> TD: 19. transfer(BankB, 100)
-TD --> BB: 20. 100 TD tokens received
-EIL -> BA: 22. Transfer completion
-EIL -> BB: 23. Transfer completion
-
-note over BA, BB: Final: Bank A: -100 TD, -100 RTGS\nBank B: +100 TD, +100 RTGS
-
-@enduml
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="5.0" etag="xxx" version="22.1.16" type="device">
+  <diagram name="外汇交易系统架构" id="architecture">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- 银行核心系统层 -->
+        <mxCell id="bankGroup" value="银行核心系统" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1f5fe;strokeColor=#01579b;fontFamily=Arial;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="300" height="200" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="bankCore" value="银行核心系统&lt;br&gt;Core Banking System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b3e5fc;strokeColor=#0277bd;fontFamily=Arial;" vertex="1" parent="bankGroup">
+          <mxGeometry x="20" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="fxTrade" value="外汇交易系统&lt;br&gt;FX Trading System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b3e5fc;strokeColor=#0277bd;fontFamily=Arial;" vertex="1" parent="bankGroup">
+          <mxGeometry x="160" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="wallet" value="数字钱包&lt;br&gt;Digital Wallet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b3e5fc;strokeColor=#0277bd;fontFamily=Arial;" vertex="1" parent="bankGroup">
+          <mxGeometry x="90" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- WTS基础设施层 -->
+        <mxCell id="wtsGroup" value="WTS基础设施" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#4a148c;fontFamily=Arial;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="50" width="400" height="300" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="blockchainGroup" value="区块链网络" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e8eaf6;strokeColor=#3f51b5;fontFamily=Arial;" vertex="1" parent="wtsGroup">
+          <mxGeometry x="20" y="40" width="180" height="120" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="node1" value="节点1&lt;br&gt;Node 1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c5cae9;strokeColor=#303f9f;fontFamily=Arial;" vertex="1" parent="blockchainGroup">
+          <mxGeometry x="10" y="30" width="50" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="node2" value="节点2&lt;br&gt;Node 2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c5cae9;strokeColor=#303f9f;fontFamily=Arial;" vertex="1" parent="blockchainGroup">
+          <mxGeometry x="70" y="30" width="50" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="node3" value="节点3&lt;br&gt;Node 3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c5cae9;strokeColor=#303f9f;fontFamily=Arial;" vertex="1" parent="blockchainGroup">
+          <mxGeometry x="120" y="30" width="50" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="smartContract" value="智能合约&lt;br&gt;ERC20 Token Contract" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d1c4e9;strokeColor=#512da8;fontFamily=Arial;" vertex="1" parent="wtsGroup">
+          <mxGeometry x="220" y="60" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="apiGateway" value="API网关&lt;br&gt;Blockchain API Gateway" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d1c4e9;strokeColor=#512da8;fontFamily=Arial;" vertex="1" parent="wtsGroup">
+          <mxGeometry x="20" y="180" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="keyMgmt" value="私钥管理&lt;br&gt;Private Key Management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d1c4e9;strokeColor=#512da8;fontFamily=Arial;" vertex="1" parent="wtsGroup">
+          <mxGeometry x="220" y="180" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- TD代币化存款系统 -->
+        <mxCell id="tdGroup" value="代币化存款系统" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e8f5e8;strokeColor=#2e7d32;fontFamily=Arial;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="50" width="250" height="200" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="tdMint" value="TD铸造模块&lt;br&gt;TD Mint Module" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontFamily=Arial;" vertex="1" parent="tdGroup">
+          <mxGeometry x="20" y="40" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="tdBurn" value="TD销毁模块&lt;br&gt;TD Burn Module" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontFamily=Arial;" vertex="1" parent="tdGroup">
+          <mxGeometry x="130" y="40" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="tdRegistry" value="TD注册表&lt;br&gt;TD Registry" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontFamily=Arial;" vertex="1" parent="tdGroup">
+          <mxGeometry x="75" y="110" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- 外汇交易流程 -->
+        <mxCell id="fxGroup" value="外汇交易流程" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#e65100;fontFamily=Arial;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="300" width="750" height="150" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="fxRequest" value="外汇交易请求&lt;br&gt;FX Trade Request" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#f57c00;fontFamily=Arial;" vertex="1" parent="fxGroup">
+          <mxGeometry x="30" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="erc20Lock" value="ERC20锁定&lt;br&gt;ERC20 Token Lock" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#f57c00;fontFamily=Arial;" vertex="1" parent="fxGroup">
+          <mxGeometry x="200" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="settlement" value="清算结算&lt;br&gt;Settlement" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#f57c00;fontFamily=Arial;" vertex="1" parent="fxGroup">
+          <mxGeometry x="370" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="erc20Release" value="ERC20释放&lt;br&gt;ERC20 Token Release" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#f57c00;fontFamily=Arial;" vertex="1" parent="fxGroup">
+          <mxGeometry x="540" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- 连接线 -->
+        <!-- 银行系统内部连接 -->
+        <mxCell id="edge1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bankCore" target="fxTrade">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fxTrade" target="wallet">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- 银行系统到WTS -->
+        <mxCell id="edge3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wallet" target="apiGateway">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- WTS内部连接 -->
+        <mxCell id="edge4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="apiGateway" target="smartContract">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="apiGateway" target="keyMgmt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="smartContract" target="node1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="smartContract" target="node2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="smartContract" target="node3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- TD系统连接 -->
+        <mxCell id="edge9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tdMint" target="smartContract">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tdBurn" target="smartContract">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tdRegistry" target="smartContract">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- 外汇交易流程连接 -->
+        <mxCell id="edge12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fxTrade" target="fxRequest">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fxRequest" target="erc20Lock">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="erc20Lock" target="settlement">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="settlement" target="erc20Release">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="erc20Lock" target="smartContract">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="erc20Release" target="smartContract">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- TD使用案例虚线连接 -->
+        <mxCell id="edge18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=5 5;" edge="1" parent="1" source="bankCore" target="tdMint">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=5 5;" edge="1" parent="1" source="tdMint" target="erc20Lock">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=5 5;" edge="1" parent="1" source="settlement" target="tdBurn">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
