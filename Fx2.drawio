@@ -1,222 +1,105 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0" version="24.7.17">
-  <diagram name="HKICL FX Pilot Architecture" id="pilot-architecture">
-    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" version="28.0.7">
+  <diagram name="外汇交易系统架构" id="architecture">
+    <mxGraphModel dx="773" dy="911" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        
-        <mxCell id="pilotBanner" value="PILOT ENVIRONMENT - HKICL FX Trading System" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9800;strokeColor=#f57c00;fontFamily=Arial;fontSize=16;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="40" y="20" width="1080" height="40" as="geometry" />
+        <mxCell id="bankGroup" value="银行核心系统" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1f5fe;strokeColor=#01579b;fontFamily=Arial;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="59" y="150" width="300" height="200" as="geometry" />
         </mxCell>
-        
-        <mxCell id="bankSystem" value="银行核心系统 (Pilot Bank)" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1f5fe;strokeColor=#01579b;fontFamily=Arial;fontSize=14;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="60" y="80" width="280" height="180" as="geometry" />
+        <mxCell id="bankCore" value="银行核心系统&lt;br&gt;Core Banking System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b3e5fc;strokeColor=#0277bd;fontFamily=Arial;" parent="bankGroup" vertex="1">
+          <mxGeometry x="13" y="122" width="120" height="60" as="geometry" />
         </mxCell>
-        
-        <mxCell id="coreBank" value="银行核心系统&lt;br&gt;Core Banking System&lt;br&gt;(Pilot Mode)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b3e5fc;strokeColor=#0277bd;fontFamily=Arial;" vertex="1" parent="bankSystem">
-          <mxGeometry x="20" y="35" width="110" height="55" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="fxSystem" value="外汇交易系统&lt;br&gt;FX Trading System&lt;br&gt;(Pilot)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b3e5fc;strokeColor=#0277bd;fontFamily=Arial;" vertex="1" parent="bankSystem">
-          <mxGeometry x="150" y="35" width="110" height="55" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="digitalWallet" value="数字钱包&lt;br&gt;Digital Wallet&lt;br&gt;(Test Environment)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b3e5fc;strokeColor=#0277bd;fontFamily=Arial;" vertex="1" parent="bankSystem">
-          <mxGeometry x="85" y="105" width="110" height="55" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="hkiclInfra" value="HKICL基础设施 (Pilot Infrastructure)" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#e65100;fontFamily=Arial;fontSize=14;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="380" y="80" width="380" height="180" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="hkiclCore" value="HKICL核心系统&lt;br&gt;HKICL Core System&lt;br&gt;(Pilot Environment)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#f57c00;fontFamily=Arial;" vertex="1" parent="hkiclInfra">
-          <mxGeometry x="20" y="35" width="130" height="55" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="hkiclAPI" value="HKICL API接口&lt;br&gt;HKICL API Gateway&lt;br&gt;(Test Mode)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#f57c00;fontFamily=Arial;" vertex="1" parent="hkiclInfra">
-          <mxGeometry x="230" y="35" width="130" height="55" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="hkiclSettlement" value="HKICL清算系统&lt;br&gt;HKICL Settlement&lt;br&gt;(Pilot Testing)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#f57c00;fontFamily=Arial;" vertex="1" parent="hkiclInfra">
-          <mxGeometry x="125" y="105" width="130" height="55" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="wtsInfra" value="WTS基础设施 (Pilot Blockchain)" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#4a148c;fontFamily=Arial;fontSize=14;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="380" y="280" width="380" height="220" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="blockchainNetwork" value="区块链网络 (Test Network)" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e8eaf6;strokeColor=#3f51b5;fontFamily=Arial;" vertex="1" parent="wtsInfra">
-          <mxGeometry x="20" y="35" width="170" height="100" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="testNode1" value="测试节点1&lt;br&gt;Test Node 1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c5cae9;strokeColor=#303f9f;fontFamily=Arial;" vertex="1" parent="blockchainNetwork">
-          <mxGeometry x="10" y="25" width="45" height="35" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="testNode2" value="测试节点2&lt;br&gt;Test Node 2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c5cae9;strokeColor=#303f9f;fontFamily=Arial;" vertex="1" parent="blockchainNetwork">
-          <mxGeometry x="62" y="25" width="45" height="35" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="testNode3" value="测试节点3&lt;br&gt;Test Node 3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c5cae9;strokeColor=#303f9f;fontFamily=Arial;" vertex="1" parent="blockchainNetwork">
-          <mxGeometry x="115" y="25" width="45" height="35" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="smartContract" value="智能合约&lt;br&gt;ERC20 Token Contract&lt;br&gt;(Pilot Version)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d1c4e9;strokeColor=#512da8;fontFamily=Arial;" vertex="1" parent="wtsInfra">
-          <mxGeometry x="210" y="50" width="130" height="55" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="blockchainAPI" value="区块链API网关&lt;br&gt;Blockchain API Gateway&lt;br&gt;(Test Environment)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d1c4e9;strokeColor=#512da8;fontFamily=Arial;" vertex="1" parent="wtsInfra">
-          <mxGeometry x="20" y="150" width="130" height="55" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="privateKeyMgmt" value="私钥管理&lt;br&gt;Private Key Management&lt;br&gt;(Pilot Security)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d1c4e9;strokeColor=#512da8;fontFamily=Arial;" vertex="1" parent="wtsInfra">
-          <mxGeometry x="210" y="150" width="130" height="55" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="tdSystem" value="代币化存款系统 (Pilot TD Implementation)" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e8f5e8;strokeColor=#2e7d32;fontFamily=Arial;fontSize=14;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="800" y="80" width="240" height="180" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="tdMint" value="TD铸造模块&lt;br&gt;TD Mint Module&lt;br&gt;(Pilot Testing)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontFamily=Arial;" vertex="1" parent="tdSystem">
-          <mxGeometry x="20" y="35" width="90" height="55" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="tdBurn" value="TD销毁模块&lt;br&gt;TD Burn Module&lt;br&gt;(Pilot Testing)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontFamily=Arial;" vertex="1" parent="tdSystem">
-          <mxGeometry x="130" y="35" width="90" height="55" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="tdRegistry" value="TD注册表&lt;br&gt;TD Registry&lt;br&gt;(Test Database)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontFamily=Arial;" vertex="1" parent="tdSystem">
-          <mxGeometry x="75" y="105" width="90" height="55" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="tradingFlow" value="外汇交易流程 (Pilot Transaction Flow)" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#e65100;fontFamily=Arial;fontSize=14;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="60" y="520" width="980" height="120" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="fxRequest" value="外汇交易请求&lt;br&gt;FX Trade Request&lt;br&gt;(Pilot Initiation)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#f57c00;fontFamily=Arial;" vertex="1" parent="tradingFlow">
-          <mxGeometry x="20" y="35" width="110" height="55" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="tokenLock" value="ERC20锁定&lt;br&gt;ERC20 Token Lock&lt;br&gt;(Test Escrow)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#f57c00;fontFamily=Arial;" vertex="1" parent="tradingFlow">
-          <mxGeometry x="160" y="35" width="110" height="55" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="hkiclProcess" value="HKICL处理&lt;br&gt;HKICL Processing&lt;br&gt;(Pilot Settlement)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#f57c00;fontFamily=Arial;" vertex="1" parent="tradingFlow">
-          <mxGeometry x="300" y="35" width="110" height="55" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="settlementProcess" value="清算结算&lt;br&gt;Settlement&lt;br&gt;(Test Completion)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#f57c00;fontFamily=Arial;" vertex="1" parent="tradingFlow">
-          <mxGeometry x="440" y="35" width="110" height="55" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="tokenRelease" value="ERC20释放&lt;br&gt;ERC20 Token Release&lt;br&gt;(Pilot Finalization)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#f57c00;fontFamily=Arial;" vertex="1" parent="tradingFlow">
-          <mxGeometry x="580" y="35" width="110" height="55" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="pilotMonitor" value="试点监控&lt;br&gt;Pilot Monitoring&lt;br&gt;(Real-time)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffccbc;strokeColor=#d84315;fontFamily=Arial;" vertex="1" parent="tradingFlow">
-          <mxGeometry x="720" y="35" width="110" height="55" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="bankToFx" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="coreBank" target="fxSystem">
+        <mxCell id="yZ5JDlVtQkjx1PtRjN0Z-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="bankGroup" source="fxTrade" target="bankCore">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        
-        <mxCell id="fxToWallet" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fxSystem" target="digitalWallet">
+        <mxCell id="fxTrade" value="外汇交易系统&lt;br&gt;FX Trading System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b3e5fc;strokeColor=#0277bd;fontFamily=Arial;" parent="bankGroup" vertex="1">
+          <mxGeometry x="170" y="122" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wallet" value="数字钱包&lt;br&gt;Digital Wallet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b3e5fc;strokeColor=#0277bd;fontFamily=Arial;" parent="bankGroup" vertex="1">
+          <mxGeometry x="4" y="52" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yZ5JDlVtQkjx1PtRjN0Z-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="bankGroup" source="fxTrade" target="wallet">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="207" y="-43" as="sourcePoint" />
+            <mxPoint x="257" y="-93" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wtsGroup" value="WTS基础设施" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#4a148c;fontFamily=Arial;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="386" y="148" width="380" height="202" as="geometry" />
+        </mxCell>
+        <mxCell id="smartContract" value="智能合约&lt;br&gt;ERC20 Token Contract" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d1c4e9;strokeColor=#512da8;fontFamily=Arial;" parent="wtsGroup" vertex="1">
+          <mxGeometry x="127" y="31" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tdGroup" value="代币化存款系统" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e8f5e8;strokeColor=#2e7d32;fontFamily=Arial;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="59" y="-76" width="379" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="tdMint" value="TD铸造模块&lt;br&gt;TD Mint Module" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontFamily=Arial;" parent="tdGroup" vertex="1">
+          <mxGeometry x="271" y="107" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tdBurn" value="TD销毁模块&lt;br&gt;TD Burn Module" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontFamily=Arial;" parent="tdGroup" vertex="1">
+          <mxGeometry x="3" y="107" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tdRegistry" value="TD注册表&lt;br&gt;TD Registry" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontFamily=Arial;" parent="tdGroup" vertex="1">
+          <mxGeometry x="144" y="30" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="keyMgmt" value="私钥管理&lt;br&gt;Private Key Management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Arial;" parent="tdGroup" vertex="1">
+          <mxGeometry x="119.5" y="107" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="yZ5JDlVtQkjx1PtRjN0Z-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="tdGroup" source="tdBurn" target="keyMgmt">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="391" y="99" as="sourcePoint" />
+            <mxPoint x="441" y="49" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="bankCore" target="fxTrade" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        
-        <mxCell id="walletToHkicl" value="Pilot Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=10;" edge="1" parent="1" source="digitalWallet" target="hkiclAPI">
+        <mxCell id="edge6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="smartContract" target="node1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        
-        <mxCell id="hkiclCoreToAPI" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hkiclCore" target="hkiclAPI">
+        <mxCell id="edge7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="smartContract" target="node2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        
-        <mxCell id="hkiclAPIToSettlement" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hkiclAPI" target="hkiclSettlement">
+        <mxCell id="edge8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="smartContract" target="node3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        
-        <mxCell id="hkiclToBlockchain" value="Blockchain Integration" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=10;" edge="1" parent="1" source="hkiclSettlement" target="blockchainAPI">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="blockchainGroup" value="区块链网络" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e8eaf6;strokeColor=#3f51b5;fontFamily=Arial;" parent="1" vertex="1">
+          <mxGeometry x="488" y="250" width="180" height="90" as="geometry" />
         </mxCell>
-        
-        <mxCell id="apiToContract" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="blockchainAPI" target="smartContract">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="node1" value="节点1&lt;br&gt;Node 1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c5cae9;strokeColor=#303f9f;fontFamily=Arial;" parent="blockchainGroup" vertex="1">
+          <mxGeometry x="10" y="30" width="50" height="40" as="geometry" />
         </mxCell>
-        
-        <mxCell id="apiToKey" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="blockchainAPI" target="privateKeyMgmt">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="node2" value="节点2&lt;br&gt;Node 2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c5cae9;strokeColor=#303f9f;fontFamily=Arial;" parent="blockchainGroup" vertex="1">
+          <mxGeometry x="70" y="30" width="50" height="40" as="geometry" />
         </mxCell>
-        
-        <mxCell id="contractToNode1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="smartContract" target="testNode1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="node3" value="节点3&lt;br&gt;Node 3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c5cae9;strokeColor=#303f9f;fontFamily=Arial;" parent="blockchainGroup" vertex="1">
+          <mxGeometry x="120" y="30" width="50" height="40" as="geometry" />
         </mxCell>
-        
-        <mxCell id="contractToNode2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="smartContract" target="testNode2">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="yZ5JDlVtQkjx1PtRjN0Z-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.625;entryY=0.995;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wallet" target="tdBurn">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="87" y="27" as="sourcePoint" />
+            <mxPoint x="95" y="133" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        
-        <mxCell id="contractToNode3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="smartContract" target="testNode3">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="yZ5JDlVtQkjx1PtRjN0Z-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="smartContract">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="112" y="81" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="112" y="81" />
+              <mxPoint x="112" y="106" />
+              <mxPoint x="583" y="106" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        
-        <mxCell id="mintToContract" value="Pilot TD" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=10;" edge="1" parent="1" source="tdMint" target="smartContract">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="yZ5JDlVtQkjx1PtRjN0Z-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tdMint" target="smartContract">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="106" />
+              <mxPoint x="583" y="106" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        
-        <mxCell id="burnToContract" value="Pilot TD" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=10;" edge="1" parent="1" source="tdBurn" target="smartContract">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="registryToContract" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tdRegistry" target="smartContract">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="fxToRequest" value="Pilot Flow" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=10;" edge="1" parent="1" source="fxSystem" target="fxRequest">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="requestToLock" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fxRequest" target="tokenLock">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="lockToHkicl" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tokenLock" target="hkiclProcess">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="hkiclToSettlement" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hkiclProcess" target="settlementProcess">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="settlementToRelease" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="settlementProcess" target="tokenRelease">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="releaseToMonitor" value="Monitor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=10;" edge="1" parent="1" source="tokenRelease" target="pilotMonitor">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="lockToContract" value="Test Tokens" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=10;" edge="1" parent="1" source="tokenLock" target="smartContract">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="releaseToContract" value="Release Tokens" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=10;" edge="1" parent="1" source="tokenRelease" target="smartContract">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="bankToMint" value="TD Pilot" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=5 5;fontFamily=Arial;fontSize=10;" edge="1" parent="1" source="coreBank" target="tdMint">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="mintToLock" value="Test Integration" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=5 5;fontFamily=Arial;fontSize=10;" edge="1" parent="1" source="tdMint" target="tokenLock">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="settlementToBurn" value="TD Burn Test" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=5 5;fontFamily=Arial;fontSize=10;" edge="1" parent="1" source="settlementProcess" target="tdBurn">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        
       </root>
     </mxGraphModel>
   </diagram>
