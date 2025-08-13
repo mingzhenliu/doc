@@ -1,10 +1,10 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" version="28.0.9">
   <diagram name="外汇交易系统架构" id="architecture">
-    <mxGraphModel dx="698" dy="911" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="699" dy="834" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="F9FrPvco1_UeTbacNDWa-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="smartContract" target="node1">
+        <mxCell id="F9FrPvco1_UeTbacNDWa-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="smartContract" target="node1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="bankGroup" value="银行核心系统" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1f5fe;strokeColor=#01579b;fontFamily=Arial;fontSize=14;fontStyle=1;" parent="1" vertex="1">
@@ -28,7 +28,7 @@
         <mxCell id="keyMgmt" value="私钥管理&lt;br&gt;Private Key Management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Arial;" parent="tdGroup" vertex="1">
           <mxGeometry x="150.25" y="100" width="152.5" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="F9FrPvco1_UeTbacNDWa-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="tdGroup" source="tdBurn" target="keyMgmt">
+        <mxCell id="F9FrPvco1_UeTbacNDWa-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="tdGroup" source="tdBurn" target="keyMgmt" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="38" y="127" as="sourcePoint" />
             <mxPoint x="88" y="77" as="targetPoint" />
@@ -52,38 +52,38 @@
         <mxCell id="node3" value="节点3&lt;br&gt;Node 3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c5cae9;strokeColor=#303f9f;fontFamily=Arial;" parent="blockchainGroup" vertex="1">
           <mxGeometry x="120" y="30" width="50" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="F9FrPvco1_UeTbacNDWa-16" value="&lt;span style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;Ensemble Pilot 网络&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Arial;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+        <mxCell id="F9FrPvco1_UeTbacNDWa-16" value="&lt;span style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;Ensemble Pilot 网络&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Arial;fontSize=14;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="529" y="-61" width="170" height="156" as="geometry" />
         </mxCell>
-        <mxCell id="F9FrPvco1_UeTbacNDWa-19" value="Ensemble Pilot 网络" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontFamily=Arial;" vertex="1" parent="F9FrPvco1_UeTbacNDWa-16">
+        <mxCell id="F9FrPvco1_UeTbacNDWa-19" value="Ensemble Pilot 网络" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontFamily=Arial;" parent="F9FrPvco1_UeTbacNDWa-16" vertex="1">
           <mxGeometry x="33" y="44" width="104" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="F9FrPvco1_UeTbacNDWa-24" value="&lt;span style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;HKICL 网络&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Arial;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+        <mxCell id="F9FrPvco1_UeTbacNDWa-24" value="&lt;span style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;HKICL 网络&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Arial;fontSize=14;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="529" y="100" width="170" height="163" as="geometry" />
         </mxCell>
-        <mxCell id="F9FrPvco1_UeTbacNDWa-29" value="RTGS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontFamily=Arial;" vertex="1" parent="F9FrPvco1_UeTbacNDWa-24">
+        <mxCell id="F9FrPvco1_UeTbacNDWa-29" value="RTGS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontFamily=Arial;" parent="F9FrPvco1_UeTbacNDWa-24" vertex="1">
           <mxGeometry x="49" y="72.5" width="104" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="F9FrPvco1_UeTbacNDWa-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="F9FrPvco1_UeTbacNDWa-29" target="bankCore">
+        <mxCell id="F9FrPvco1_UeTbacNDWa-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="F9FrPvco1_UeTbacNDWa-29" target="bankCore" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="F9FrPvco1_UeTbacNDWa-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tdBurn" target="smartContract">
+        <mxCell id="F9FrPvco1_UeTbacNDWa-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="tdBurn" target="smartContract" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="164" y="2" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="F9FrPvco1_UeTbacNDWa-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bankCore" target="tdBurn">
+        <mxCell id="F9FrPvco1_UeTbacNDWa-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="bankCore" target="tdBurn" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="F9FrPvco1_UeTbacNDWa-36" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="F9FrPvco1_UeTbacNDWa-19" target="tdBurn">
+        <mxCell id="F9FrPvco1_UeTbacNDWa-36" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="F9FrPvco1_UeTbacNDWa-19" target="tdBurn" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="475" y="-98" as="sourcePoint" />
             <mxPoint x="525" y="-148" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="F9FrPvco1_UeTbacNDWa-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.344;entryY=0.062;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="F9FrPvco1_UeTbacNDWa-19" target="F9FrPvco1_UeTbacNDWa-29">
+        <mxCell id="F9FrPvco1_UeTbacNDWa-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.344;entryY=0.062;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="F9FrPvco1_UeTbacNDWa-19" target="F9FrPvco1_UeTbacNDWa-29" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
