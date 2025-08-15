@@ -1,10 +1,59 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0" version="28.1.0">
-  <diagram name="Page-1" id="Ul4w7VjwoHYBQYIpKP7i">
-    <mxGraphModel>
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+sequenceDiagram
+    autonumber
+    participant INST as 机构
+    participant MS as MinterService
+    participant BANK as 银行
+    participant CHAIN as 区块链/合约
+    participant ADMIN as 稳定币运营管理台
+    participant WEB3 as Web3监听服务
+
+    Note over INST,MS: 第一阶段：申请mint订单
+
+    INST->>MS: 1. 申请mint稳定币
+    Note right of INST: 提交金额、收款地址等信息
+    MS->>MS: 2. 生成订单记录
+    MS-->>INST: 3. 返回订单ID (OrderId)
+
+    Note over INST,BANK: 第二阶段：银行转账+存证
+
+    INST->>BANK: 4. 银行转账
+    Note right of INST: 备注中包含OrderId
+    BANK->>MS: 5. 查询订单信息 (通过OrderId)
+    MS-->>BANK: 6. 返回订单详情
+    BANK->>BANK: 7. 计算MintHash
+    BANK->>CHAIN: 8. 上链存证 (MintHash+OrderId)
+    CHAIN-->>BANK: 9. 存证交易确认
+
+    Note over WEB3,MS: 第三阶段：事件监听+状态更新
+
+    WEB3->>CHAIN: 10. 监听存证事件
+    CHAIN-->>WEB3: 11. 存证事件推送
+    WEB3->>MS: 12. 通知收到存证
+    MS->>MS: 13. 更新订单状态为"已存证"
+
+    Note over INST,CHAIN: 第四阶段：机构签名mint请求
+
+    INST->>MS: 14. 查看订单状态
+    MS-->>INST: 15. 显示"可申请mint"
+    INST->>INST: 16. 签名mint交易
+    INST->>CHAIN: 17. 发送MintRequest上链
+    CHAIN-->>INST: 18. MintRequest交易确认
+
+    Note over ADMIN,CHAIN: 第五阶段：审批流+mint执行
+
+    WEB3->>CHAIN: 19. 监听MintRequest事件
+    CHAIN-->>WEB3: 20. MintRequest事件推送
+    WEB3->>ADMIN: 21. 产生mint审批流
+    ADMIN->>ADMIN: 22. 人工审批
+    ADMIN->>CHAIN: 23. 发送Approve交易
+    CHAIN->>CHAIN: 24. 校验存证Hash
+    alt 存证校验通过
+        CHAIN->>CHAIN: 25. 执行mint操作
+        CHAIN-->>ADMIN: 26. Mint成功事件
+        ADMIN-->>INST: 27. 通知mint完成
+    else 存证校验失败
+        CHAIN-->>ADMIN: 28. Mint失败事件
+        ADMIN-->>INST: 29. 通知mint失败
+    end
+
+    Note over INST,CHAIN: 完成：机构收到稳定币
