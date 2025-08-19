@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0" version="28.1.0">
   <diagram id="arch1" name="区块链技术架构全景图">
-    <mxGraphModel dx="438948" dy="325485" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+    <mxGraphModel dx="448548" dy="331885" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -101,7 +101,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="m_jgF1qhLPn7pk0m3BA8-2" value="TP流程管理模块" style="rounded=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="m_jgF1qhLPn7pk0m3BA8-2" value="TD流程(mint/burn/transfer)管理模块" style="rounded=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="469.5" y="202" width="161" height="58" as="geometry" />
         </mxCell>
         <mxCell id="m_jgF1qhLPn7pk0m3BA8-4" value="交易查询" style="rounded=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="1">
