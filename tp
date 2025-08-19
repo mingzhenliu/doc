@@ -1,85 +1,83 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0" version="28.1.0">
   <diagram id="arch1" name="区块链技术架构全景图">
-    <mxGraphModel dx="448548" dy="331885" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+    <mxGraphModel dx="548998" dy="407268" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="m_jgF1qhLPn7pk0m3BA8-3" value="TP-NODE 代币化链节点服务（C++）&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;" style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="-13.5" y="317" width="1248" height="567" as="geometry" />
+        <mxCell id="m_jgF1qhLPn7pk0m3BA8-3" value="TP-NODE 代币化链节点服务（C++）&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;" style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="-8.5" y="276" width="1248" height="491" as="geometry" />
         </mxCell>
         <mxCell id="layer_iface_bg" value="接口层" style="rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;" parent="1" vertex="1">
-          <mxGeometry x="40" y="351" width="1160" height="110" as="geometry" />
+          <mxGeometry x="39.5" y="317" width="1160" height="110" as="geometry" />
         </mxCell>
         <mxCell id="rpc" value="RPC&#xa;Channel / WebSocket / JSON-RPC" style="rounded=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#9673a6;" parent="1" vertex="1">
-          <mxGeometry x="718" y="371" width="460" height="70" as="geometry" />
+          <mxGeometry x="717.5" y="335" width="460" height="72" as="geometry" />
         </mxCell>
         <mxCell id="sdk" value="SDK&#xa;Java SDK" style="rounded=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#9673a6;" parent="1" vertex="1">
-          <mxGeometry x="440" y="371" width="220" height="70" as="geometry" />
+          <mxGeometry x="439.5" y="337" width="220" height="70" as="geometry" />
         </mxCell>
         <mxCell id="console" value="交互式控制台 / 运维面板" style="rounded=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#9673a6;" parent="1" vertex="1">
-          <mxGeometry x="51" y="371" width="374" height="70" as="geometry" />
+          <mxGeometry x="50.5" y="336" width="374" height="71" as="geometry" />
         </mxCell>
         <mxCell id="layer_mgmt_bg" value="" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" parent="1" vertex="1">
-          <mxGeometry x="36" y="476" width="1160" height="110" as="geometry" />
+          <mxGeometry x="35.5" y="442" width="1161.5" height="95" as="geometry" />
         </mxCell>
         <mxCell id="admission" value="准入管理" style="rounded=1;fillColor=#ffffff;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="56" y="496" width="225" height="70" as="geometry" />
+          <mxGeometry x="55.5" y="453" width="225" height="70" as="geometry" />
         </mxCell>
         <mxCell id="perm" value="权限管理" style="rounded=1;fillColor=#ffffff;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="345" y="496" width="245" height="70" as="geometry" />
+          <mxGeometry x="344.5" y="453" width="245" height="70" as="geometry" />
         </mxCell>
         <mxCell id="consMgmt" value="共识管理" style="rounded=1;fillColor=#ffffff;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="670" y="496" width="191" height="70" as="geometry" />
+          <mxGeometry x="669.5" y="453" width="191" height="70" as="geometry" />
         </mxCell>
         <mxCell id="params" value="参数管理" style="rounded=1;fillColor=#ffffff;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="960" y="496" width="208" height="70" as="geometry" />
+          <mxGeometry x="959.5" y="453" width="208" height="70" as="geometry" />
         </mxCell>
         <mxCell id="layer_chain_bg" value="链核心层" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;" parent="1" vertex="1">
-          <mxGeometry x="26" y="603" width="1160" height="140" as="geometry" />
+          <mxGeometry x="25.5" y="543" width="1160" height="108" as="geometry" />
         </mxCell>
         <mxCell id="evm" value="区块/交易 合约执行引擎" style="rounded=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="46" y="625" width="240" height="100" as="geometry" />
+          <mxGeometry x="45.5" y="565" width="240.5" height="71" as="geometry" />
         </mxCell>
         <mxCell id="chainMgr" value="区块链管理" style="rounded=1;fillColor=#ffffff;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="306" y="625" width="180" height="100" as="geometry" />
+          <mxGeometry x="305.5" y="565" width="176.5" height="71" as="geometry" />
         </mxCell>
         <mxCell id="consensus" value="共识：PBFT / RAFT" style="rounded=1;fillColor=#ffffff;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="506" y="625" width="180" height="100" as="geometry" />
+          <mxGeometry x="505.5" y="565" width="177.5" height="74" as="geometry" />
         </mxCell>
         <mxCell id="sync" value="区块同步" style="rounded=1;fillColor=#ffffff;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="706" y="625" width="140" height="100" as="geometry" />
+          <mxGeometry x="705.5" y="565" width="130.5" height="73" as="geometry" />
         </mxCell>
         <mxCell id="txpool" value="交易池" style="rounded=1;fillColor=#ffffff;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="866" y="625" width="120" height="100" as="geometry" />
+          <mxGeometry x="865.5" y="565" width="111.5" height="71" as="geometry" />
         </mxCell>
         <mxCell id="p2p" value="P2P 网络" style="rounded=1;fillColor=#ffffff;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="1006" y="625" width="160" height="100" as="geometry" />
+          <mxGeometry x="1005.5" y="565" width="156.5" height="73" as="geometry" />
+        </mxCell>
+        <mxCell id="m_jgF1qhLPn7pk0m3BA8-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.28;entryY=0.008;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="layer_platform_bg" target="m_jgF1qhLPn7pk0m3BA8-3">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="layer_platform_bg" value="代币化核心服务 TP-CORE（Java）&#xa;&#xa;&#xa;&#xa;" style="rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;" parent="1" vertex="1">
-          <mxGeometry x="13" y="136" width="672" height="155" as="geometry" />
+          <mxGeometry x="7.75" y="142" width="654" height="119" as="geometry" />
         </mxCell>
         <mxCell id="core" value="私钥管理" style="rounded=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#b85450;" parent="1" vertex="1">
-          <mxGeometry x="51" y="203" width="164" height="59" as="geometry" />
+          <mxGeometry x="51" y="181" width="164" height="59" as="geometry" />
         </mxCell>
-        <mxCell id="m_jgF1qhLPn7pk0m3BA8-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="scan">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="968" y="321" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="scan" value="TP-SCAN（区块链浏览器）&#xa;&#xa;&#xa;" style="rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" parent="1" vertex="1">
-          <mxGeometry x="700" y="134" width="534" height="153" as="geometry" />
+        <mxCell id="scan" value="TP-SCAN（区块链浏览器）&#xa;&#xa;&#xa;&#xa;" style="rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="700" y="144" width="534" height="124" as="geometry" />
         </mxCell>
         <mxCell id="layer_base_bg" value="基础设施" style="rounded=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=14;" parent="1" vertex="1">
-          <mxGeometry x="26" y="758" width="1171" height="90" as="geometry" />
+          <mxGeometry x="25.5" y="659" width="1171" height="90" as="geometry" />
         </mxCell>
         <mxCell id="crypto" value="密码学算法 / 隐私算法" style="rounded=1;fillColor=#ffffff;strokeColor=#999999;" parent="1" vertex="1">
-          <mxGeometry x="46" y="780" width="360" height="50" as="geometry" />
+          <mxGeometry x="45.5" y="681" width="360" height="50" as="geometry" />
         </mxCell>
         <mxCell id="runtime" value="基础库与IO：Boost/磁盘IO/Socket" style="rounded=1;fillColor=#ffffff;strokeColor=#999999;" parent="1" vertex="1">
-          <mxGeometry x="426" y="780" width="340" height="50" as="geometry" />
+          <mxGeometry x="425.5" y="681" width="340" height="50" as="geometry" />
         </mxCell>
         <mxCell id="network" value="网络与安全：TLS" style="rounded=1;fillColor=#ffffff;strokeColor=#999999;" parent="1" vertex="1">
-          <mxGeometry x="786" y="780" width="400" height="50" as="geometry" />
+          <mxGeometry x="785.5" y="681" width="400" height="50" as="geometry" />
         </mxCell>
         <mxCell id="e1" style="endArrow=block;strokeColor=#6c8ebf;edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="layer_client" target="layer_flow" edge="1" />
         <mxCell id="e2" style="endArrow=block;strokeColor=#d79b00;edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="layer_flow" target="rpc" edge="1" />
@@ -90,28 +88,19 @@
         <mxCell id="e7" style="endArrow=block;strokeColor=#b85450;edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="core" target="node" edge="1" />
         <mxCell id="e8" style="endArrow=block;strokeColor=#b85450;edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="scan" target="node" edge="1" />
         <mxCell id="m_jgF1qhLPn7pk0m3BA8-1" value="外部对接模块" style="rounded=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="253" y="203" width="161" height="58" as="geometry" />
-        </mxCell>
-        <mxCell id="m_jgF1qhLPn7pk0m3BA8-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="m_jgF1qhLPn7pk0m3BA8-2">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="550" y="317" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="550" y="287" />
-              <mxPoint x="550" y="287" />
-            </Array>
-          </mxGeometry>
+          <mxGeometry x="251" y="181" width="161" height="58" as="geometry" />
         </mxCell>
         <mxCell id="m_jgF1qhLPn7pk0m3BA8-2" value="TD流程(mint/burn/transfer)管理模块" style="rounded=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="469.5" y="202" width="161" height="58" as="geometry" />
+          <mxGeometry x="451" y="181" width="161" height="58" as="geometry" />
         </mxCell>
         <mxCell id="m_jgF1qhLPn7pk0m3BA8-4" value="交易查询" style="rounded=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="708" y="203" width="164" height="59" as="geometry" />
+          <mxGeometry x="709" y="180" width="164" height="59" as="geometry" />
         </mxCell>
         <mxCell id="m_jgF1qhLPn7pk0m3BA8-6" value="区块查询" style="rounded=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="886" y="203" width="164" height="59" as="geometry" />
+          <mxGeometry x="885" y="180" width="164" height="59" as="geometry" />
         </mxCell>
         <mxCell id="m_jgF1qhLPn7pk0m3BA8-7" value="合约查询" style="rounded=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="1056" y="202" width="164" height="59" as="geometry" />
+          <mxGeometry x="1061" y="180" width="164" height="59" as="geometry" />
         </mxCell>
         <mxCell id="m_jgF1qhLPn7pk0m3BA8-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="m_jgF1qhLPn7pk0m3BA8-9">
           <mxGeometry relative="1" as="geometry">
@@ -119,13 +108,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="m_jgF1qhLPn7pk0m3BA8-9" value="&lt;span style=&quot;font-size: 10pt; font-family: Arial;&quot;&gt;Ensemble&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;opacity=70;" vertex="1" parent="1">
-          <mxGeometry x="-0.5" y="-1" width="668" height="104" as="geometry" />
+          <mxGeometry x="9.5" y="39" width="650.5" height="73" as="geometry" />
         </mxCell>
         <mxCell id="m_jgF1qhLPn7pk0m3BA8-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="m_jgF1qhLPn7pk0m3BA8-11" target="scan">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="m_jgF1qhLPn7pk0m3BA8-11" value="&lt;span style=&quot;font-size: 10pt; font-family: Arial;&quot;&gt;交易信息查询员&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;opacity=70;" vertex="1" parent="1">
-          <mxGeometry x="691" y="-1" width="552" height="104" as="geometry" />
+          <mxGeometry x="703.5" y="41.5" width="527" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="m_jgF1qhLPn7pk0m3BA8-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.798;entryY=0.02;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="scan" target="layer_iface_bg">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1263" y="333" as="sourcePoint" />
+            <mxPoint x="1313" y="283" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
