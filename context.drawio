@@ -1,9 +1,68 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0" version="28.1.0">
   <diagram name="Page-1" id="k_4hWjBdGOuU8uHX1Wgo">
-    <mxGraphModel>
+    <mxGraphModel dx="1271" dy="789" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="PbnBgXYVcYUfT6UKGXxh-43" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;ADM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="843" y="549" width="478" height="201" as="geometry" />
+        </mxCell>
+        <mxCell id="PbnBgXYVcYUfT6UKGXxh-38" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;p style=&quot;margin-top: 0pt; margin-bottom: 0pt; direction: ltr; unicode-bidi: embed; vertical-align: baseline;&quot;&gt;&lt;span style=&quot;font-size: 10pt; font-family: Arial;&quot;&gt;ECN&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="533" y="440" width="270" height="311" as="geometry" />
+        </mxCell>
+        <mxCell id="PbnBgXYVcYUfT6UKGXxh-1" value="TP-NODE 代币化链节点服务" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1064" y="665" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PbnBgXYVcYUfT6UKGXxh-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PbnBgXYVcYUfT6UKGXxh-18" target="PbnBgXYVcYUfT6UKGXxh-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PbnBgXYVcYUfT6UKGXxh-18" value="代币化核心服务 TP-CORE" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="880" y="565.5" width="193" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PbnBgXYVcYUfT6UKGXxh-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PbnBgXYVcYUfT6UKGXxh-20" target="PbnBgXYVcYUfT6UKGXxh-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PbnBgXYVcYUfT6UKGXxh-20" value="TP-SCAN（区块链浏览器）" style="rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1098.25" y="565.5" width="171.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PbnBgXYVcYUfT6UKGXxh-31" value="&lt;span style=&quot;font-size: 10pt; font-family: Arial;&quot;&gt;Ensemble&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;opacity=70;" vertex="1" parent="1">
+          <mxGeometry x="393" y="560.5" width="75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PbnBgXYVcYUfT6UKGXxh-33" value="&lt;span style=&quot;font-size: 10pt; font-family: Arial;&quot;&gt;交易信息查询员&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;opacity=70;" vertex="1" parent="1">
+          <mxGeometry x="524" y="119" width="113" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PbnBgXYVcYUfT6UKGXxh-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PbnBgXYVcYUfT6UKGXxh-44" target="PbnBgXYVcYUfT6UKGXxh-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PbnBgXYVcYUfT6UKGXxh-48" value="HTTPS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PbnBgXYVcYUfT6UKGXxh-47">
+          <mxGeometry x="-0.0061" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbnBgXYVcYUfT6UKGXxh-44" value="PROXY" style="rounded=1;fillColor=#b1ddf0;strokeColor=#10739e;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="609" y="565.5" width="111" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PbnBgXYVcYUfT6UKGXxh-45" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="PbnBgXYVcYUfT6UKGXxh-31" target="PbnBgXYVcYUfT6UKGXxh-44">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="149" y="640" as="sourcePoint" />
+            <mxPoint x="199" y="590" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbnBgXYVcYUfT6UKGXxh-49" value="HTTPS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PbnBgXYVcYUfT6UKGXxh-45">
+          <mxGeometry x="-0.2669" y="1" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbnBgXYVcYUfT6UKGXxh-53" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="442" width="479" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="PbnBgXYVcYUfT6UKGXxh-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PbnBgXYVcYUfT6UKGXxh-54" target="PbnBgXYVcYUfT6UKGXxh-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PbnBgXYVcYUfT6UKGXxh-54" value="VDI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1124" y="458" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
